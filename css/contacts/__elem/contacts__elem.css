@@ -1,0 +1,35 @@
+.contacts__elem {
+    display: block;
+    min-height: 32px;
+    padding-left: 28px;
+}
+
+.contacts__elem p {
+    margin: 0;
+    margin-left: 28px;
+    display: inline;
+}
+
+.contacts__elem:first-child {
+    margin-bottom: 36px;
+    background-image: url(../../../img/bx_bxs-location.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.contacts__elem:nth-child(2) {
+    margin-bottom: 11px;
+    background-image: url(../../../img/bx_bxs-phone-call.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+.contacts__elem:last-child {
+    margin-bottom: 0;
+    background-image: url(../../../img/bx_bxs-envelope.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+}

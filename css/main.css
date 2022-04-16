@@ -1,0 +1,143 @@
+@import url(page/page.css);
+@import url(page/__title/page__title.css);
+@import url(page/__subtitle/page__subtitle.css);
+
+@import url(lead/lead.css);
+@import url(lead/__slogan/lead__slogan.css);
+
+@import url(halls/halls.css);
+@import url(halls/__elem/halls__elem.css);
+@import url(halls/__elem-first/halls__elem-first.css);
+@import url(halls/__elem-second/halls__elem-second.css);
+@import url(halls/__elem-third/halls__elem-third.css);
+@import url(halls/__elem-forth/halls__elem-forth.css);
+
+@import url(about/about.css);
+@import url(about/__text/about__text.css);
+@import url(about/__boss/about__boss.css);
+@import url(about/__blockquote/about__blockquote.css);
+@import url(about/__boss-desc/about__boss-desc.css);
+@import url(about/__section-left/about__section-left.css);
+@import url(about/__section-right/about__section-right.css);
+
+@import url(faq/faq.css);
+@import url(faq/__item/faq__item.css);
+@import url(faq/__list/faq__list.css);
+
+@import url(contacts/contacts.css);
+@import url(contacts/__list/contacts__list.css);
+@import url(contacts/__elem/contacts__elem.css);
+@import url(contacts/__socials/contacts__socials.css);
+@import url(contacts/__social-item/contacts__social-item.css);
+@import url(contacts/__link/contacts__link.css);
+
+@import url(feedback/feedback.css);
+@import url(feedback/__block/feedback__block.css);
+@import url(feedback/__text/feedback__text.css);
+@import url(feedback/__title/feedback__title.css);
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(300, 1.9%, 10.4%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.container-page {
+    width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 130px 130px 50px 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 1.9%, 10.4%);
+}
+
+.container-footer {
+    width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 50px 130px 130px 185px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(#1B1A1B, #370A37);
+}
+
+.lead-container {
+    min-height: 862px;
+}
+
+blockquote p:before {
+    content: "\201C";
+    position: absolute;
+    left: -35px;
+    top: 35px;
+    font-size: 88px;
+    line-height: 0;
+    color: #6C0287;
+}
+
+blockquote p:after {
+    content: "\201D";
+    position: absolute;
+    right: 110px;
+    bottom: 10px;
+    font-size: 88px;
+    line-height: 0;
+    color: #6C0287;
+}
+
+h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}

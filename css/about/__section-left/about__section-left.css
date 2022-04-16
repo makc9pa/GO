@@ -1,0 +1,7 @@
+.about__section-left {
+    margin-right: 80px;
+    width: 600px;
+    min-height: 600px;
+    background-image: url(../../../img/about-photos.jpg);
+    background-repeat: no-repeat;
+}
