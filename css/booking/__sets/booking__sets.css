@@ -1,0 +1,6 @@
+.booking__sets {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,10 @@
+.booking__list-choose-date-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+    row-gap: 14px;
+    margin-bottom: 40px;
+}

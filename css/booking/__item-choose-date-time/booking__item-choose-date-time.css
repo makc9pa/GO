@@ -1,0 +1,35 @@
+.booking__item-choose-date-time {}
+
+.booking__item-choose-date {
+    width: 134px;
+}
+
+.booking__item-choose-time {
+    width: 134px;
+}
+
+.booking__item-choose-name {
+    width: 280px;
+}
+
+.booking__item-choose-phone {
+    width: 300px;
+}
+
+.booking__item-choose-count {
+    width: 300px;
+}
+
+.booking__item-choose-surname {
+    width: 280px;
+}
+
+.booking__item-choose-email {
+    width: 300px;
+}
+
+.booking__item-choose-date-time {
+    /* width: 300px; */
+    /* flex: 1 0 140px; */
+    /* flex-grow: 1; */
+}

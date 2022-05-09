@@ -1,8 +1,10 @@
 .page__title {
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.1em;
     text-transform: uppercase;
-    line-height: 200px;
-    font-size: 200px;
+    font-size: 150px;
+    line-height: 100%;
+    font-family: Arial Black;
     font-weight: 900;
+    overflow: hidden;
 }

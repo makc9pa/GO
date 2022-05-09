@@ -1,0 +1,11 @@
+.lead__book {
+    width: 374px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 25px 69px;
+    background: #6C0287;
+    border-radius: 10px;
+}

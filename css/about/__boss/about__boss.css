@@ -1,5 +1,7 @@
 .about__boss {
-    margin: 0;
+    /* margin: 0; */
+    position: relative;
+    left: 720px;
     width: 500px;
     background: url('../../../img/boss.png');
     background-position: 110px;

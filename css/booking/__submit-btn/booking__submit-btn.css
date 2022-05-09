@@ -1,0 +1,12 @@
+.booking__submit-btn {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px 50px;
+    position: relative;
+    left: 763px;
+}

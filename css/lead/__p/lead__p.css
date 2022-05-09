@@ -1,0 +1,23 @@
+.lead__p_count-cinema-halls {
+    color: #CD06FF;
+    font-weight: 900;
+    font-size: 100px;
+    font-family: Arial Black;
+    line-height: 141px;
+}
+
+.lead__p_new {
+    margin-bottom: 9px;
+    color: #CD06FF;
+    font-weight: 900;
+    font-size: 75px;
+    font-family: Arial Black;
+    line-height: 106px;
+    font-variant: small-caps;
+}
+
+.lead__p_cinema-halls,
+.lead__p_new-devices {
+    font-size: 30px;
+    line-height: 34px;
+}
