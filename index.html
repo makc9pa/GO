@@ -208,15 +208,15 @@
                                 </label>
                             </li>
                             <li class="booking__item-choose-date-time">
+                                <p class="booking__item-label">Имя</p>
                                 <label for="name_book">
-                                    <p class="booking__item-label">Имя</p>
                                     <input class="booking__item-choose-name" type="text" id="name_book" name="name_book"
                                         required>
                                 </label>
                             </li>
                             <li class="booking__item-choose-date-time">
+                                <p class="booking__item-label">Телефон</p>
                                 <label for="phone_book">
-                                    <p class="booking__item-label">Телефон</p>
                                     <input class="booking__item-choose-phone" type="tel" id="phone_book"
                                         name="phone_book" title="+7-___-___-__-__"
                                         pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
@@ -236,21 +236,22 @@
                                 </label>
                             </li>
                             <li class="booking__item-choose-date-time">
-                                <label for="surname_book">
-                                    <p class="booking__item-label">Фамилия</p>
-                                    <input class="booking__item-choose-surname" type="text" id="surname_book"
+                                <p class="booking__item-label">Фамилия</p>
+                                <label for="surname">
+                                    <input class="booking__item-choose-surname" type="text" id="surname"
                                         name="surname_book" required>
                                 </label>
                             </li>
                             <li class="booking__item-choose-date-time">
-                                <label for="phone_book">
-                                    <p class="booking__item-label">E-mail</p>
+                                <p class="booking__item-label">E-mail</p>
+                                <label for="email">
                                     <input class="booking__item-choose-email" type="email" id="email" name="email"
                                         title="+7-___-___-__-__">
                                 </label>
                             </li>
                         </ul>
                         <button class="booking__submit-btn" type="submit" formaction="#">Забронировать</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -316,7 +317,6 @@
             </div>
         </section>
     </main>
-    </div>
     <footer>
         <section class="contacts">
             <div class="footer-container">
