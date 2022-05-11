@@ -1,26 +1,21 @@
-.feedback__block {
-    display: inline-flex;
+.feedback__item {
     width: 980px;
-    min-height: 319px;
+    flex-basis: 319px;
 }
 
-.feedback__block:not(:last-child) {
-    margin-bottom: 50px;
-}
-
-.feedback__block-image1 {
+.feedback__item_first {
     background-image: url(../../../img/person1.png);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
-.feedback__block-image2 {
+.feedback__item_second {
     background-image: url(../../../img/person2.png);
     background-repeat: no-repeat;
     background-size: auto;
 }
 
-.feedback__block-image3 {
+.feedback__item_third {
     background-image: url(../../../img/person3.png);
     background-repeat: no-repeat;
     background-size: auto;

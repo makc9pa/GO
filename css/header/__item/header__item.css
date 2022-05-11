@@ -1,22 +1,3 @@
 .header__item {
     display: block;
 }
-
-.header__item:first-child {
-    width: 120px;
-    height: 66px;
-    background-image: url('./../../../img/logo.svg');
-    background-repeat: no-repeat;
-}
-
-.header__item:nth-child(5n+1) {
-    margin-right: 55px;
-}
-
-.header__item:last-child {
-    line-height: 30px;
-    padding: 12px 32px;
-    font-weight: 700;   
-    border: 3px solid #CD06FF;
-    border-radius: 10px;
-}

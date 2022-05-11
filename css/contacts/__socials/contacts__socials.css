@@ -1,3 +1,5 @@
 .contacts__socials {
+    display: flex;
+    gap: 28px;
     min-height: 50px;
 }

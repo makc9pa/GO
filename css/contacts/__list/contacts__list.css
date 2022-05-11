@@ -1,4 +1,7 @@
 .contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 40px;

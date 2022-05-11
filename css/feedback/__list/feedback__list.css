@@ -1,0 +1,7 @@
+.feedback__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 319px;
+    gap: 50px;
+}

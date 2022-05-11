@@ -1,7 +1,5 @@
 .header {
-    width: 100vw;
-    padding-left: 130px;
-    padding-right: 130px;
-    background-color: hsl(300, 1.9%, 10.4%);
+    padding-top: 30px;
+    padding-bottom: 25px;
     text-transform: uppercase;
 }

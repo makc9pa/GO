@@ -1,7 +1,3 @@
-.contacts__social-item {
-    display: inline-block;
-}
+.contacts__social-item {}
 
-.contacts__social-item:not(:last-child) {
-    margin-right: 27px;
-}
+.contacts__social-item:not(:last-child) {}
