@@ -12,24 +12,20 @@
 </head>
 
 <body class="page">
-    <header>
-        <section class="header">
-            <div class="header-container">
-                <h2 class="header__logo"></h2>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__item">Залы</li>
-                        <li class="header__item">О нас</li>
-                        <li class="header__item">Бронь</li>
-                        <li class="header__item">Отзывы</li>
-                        <li class="header__item">Контакты</li>
-                    </ul>
-                </nav>
-                <button class="header__book">
-                    Заказать звонок
-                </button>
-            </div>
-        </section>
+    <header class="header">
+        <div class="header-container">
+            <img class="header__logo" src='./../../../img/logo.svg' alt="Логотип">
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#halls">Залы</a></li>
+                    <li class="header__item"><a href="#aboutus">О нас</a></li>
+                    <li class="header__item"><a href="#booking">Бронь</a></li>
+                    <li class="header__item"><a href="#feedback">Отзывы</a></li>
+                    <li class="header__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="header__book">Заказать звонок</button>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="lead">
@@ -122,16 +118,20 @@
                     </h2>
                     <ul class="booking__list-cinema-halls">
                         <li class="booking__item-cinema-hall">
-                            <a href="" class="booking__item-btn">80’s vibes</a>
+                            <input type="checkbox" id="hall1" name="hall1" value="80’s vibes" hidden>
+                            <label class="booking__item-cinema-hall-label" for="hall1">80’s vibes</label>
                         </li>
                         <li class="booking__item-cinema-hall">
-                            <a href="" class="booking__item-btn">Star wars</a>
+                            <input type="checkbox" id="hall2" name="hall2" value="Star wars" hidden>
+                            <label class="booking__item-cinema-hall-label" for="hall2">Star wars</label>
                         </li>
                         <li class="booking__item-cinema-hall">
-                            <a href="" class="booking__item-btn">Wild west</a>
+                            <input type="checkbox" id="hall3" name="hall3" value="Wild west" hidden>
+                            <label class="booking__item-cinema-hall-label" for="hall3">Wild west</label>
                         </li>
                         <li class="booking__item-cinema-hall">
-                            <a href="" class="booking__item-btn">Neon style</a>
+                            <input type="checkbox" id="hall4" name="hall4" value="Neon style" hidden>
+                            <label class="booking__item-cinema-hall-label" for="hall4">Neon style</label>
                         </li>
                     </ul>
                     <h2 class="booking__subtitle">
@@ -146,7 +146,7 @@
                         <div class="booking__sets">
                             <ul class="booking__list-set-console">
                                 <li class="booking__item-console">
-                                    <input type="radio" id="radioButton1" value="playStation">
+                                    <input type="radio" id="radioButton1" value="playStation" checked="checked">
                                     <label for="radioButton1">PlayStation 5</label>
                                 </li>
                                 <li class="booking__item-console">
@@ -246,7 +246,7 @@
                                 <p class="booking__item-label">E-mail</p>
                                 <label for="email">
                                     <input class="booking__item-choose-email" type="email" id="email" name="email"
-                                        title="+7-___-___-__-__">
+                                        title="_@_._">
                                 </label>
                             </li>
                         </ul>
@@ -365,7 +365,7 @@
                     <div class="contacts__section-map">
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A90187fd8b1a9cbae323ea8bb1d637ca826def11387f80ccc873b43bfa272db16&amp;source=constructor"
-                            width="680" height="274" frameborder="0">
+                            width="680" height="274">
                         </iframe>
                     </div>
                 </div>

@@ -8,7 +8,19 @@
 }
 
 .contacts__link-first {
-    background-image: url(../../../img/social_instagram.svg);
+    background-image: url(../../../img/social_instagram_usual.svg);
+}
+
+.contacts__link-first:hover {
+    background-image: url(../../../img/social_instagram_hover.svg);
+}
+
+.contacts__link-first:focus {
+    background-image: url(../../../img/social_instagram_focus.svg);
+}
+
+.contacts__link-first:active {
+    background-image: url(../../../img/social_instagram_active.svg);
 }
 
 .contacts__link-second {

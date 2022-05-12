@@ -6,6 +6,18 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 25px 69px;
-    background: #6C0287;
+    background: hsl(288, 97%, 27%);
     border-radius: 10px;
+    border-color: hsl(288, 97%, 27%);
+}
+
+.lead__book:hover,
+.lead__book:focus {
+    background-color: hsl(288, 88%, 34%);
+    border-color: hsl(288, 88%, 34%);
+}
+
+.lead__book:active {
+    background-color: hsl(275, 88%, 34%);
+    border-color: hsl(275, 88%, 34%);
 }
