@@ -1,3 +1,7 @@
 .booking__set input:focus {
     outline: 1px solid #CD06FF;
 }
+
+.booking__set input + label:hover {
+    color: #CD06FF;
+}

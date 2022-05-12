@@ -23,3 +23,7 @@
     background-position: 0 center;
     background-size: contain;
 }
+
+.contacts__elem:hover {
+    color: hsl(288, 97%, 57%);
+}

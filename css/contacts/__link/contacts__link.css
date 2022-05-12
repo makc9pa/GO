@@ -27,10 +27,46 @@
     background-image: url(../../../img/social_vk.svg);
 }
 
+.contacts__link-second:hover {
+    background-image: url(../../../img/social_vk-hover.svg);
+}
+
+.contacts__link-second:focus {
+    background-image: url(../../../img/social_vk-focus.svg);
+}
+
+.contacts__link-second:active {
+    background-image: url(../../../img/social_vk-active.svg);
+}
+
 .contacts__link-third {
     background-image: url(../../../img/social_facebook.svg);
 }
 
+.contacts__link-third:hover {
+    background-image: url(../../../img/social_facebook-hover.svg);
+}
+
+.contacts__link-third:focus {
+    background-image: url(../../../img/social_facebook-focus.svg);
+}
+
+.contacts__link-third:active {
+    background-image: url(../../../img/social_facebook-active.svg);
+}
+
 .contacts__link-forth {
     background-image: url(../../../img/social_telegram.svg);
+}
+
+.contacts__link-forth:hover {
+    background-image: url(../../../img/social_telegram-hover.svg);
+}
+
+.contacts__link-forth:focus {
+    background-image: url(../../../img/social_telegram-focus.svg);
+}
+
+.contacts__link-forth:active {
+    background-image: url(../../../img/social_telegram-active.svg);
 }

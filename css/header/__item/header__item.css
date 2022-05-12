@@ -1,3 +1,7 @@
 .header__item {
     display: block;
 }
+
+.header__item:hover {
+    color: hsl(288, 97%, 57%);
+}

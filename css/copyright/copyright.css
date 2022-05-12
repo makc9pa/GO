@@ -4,3 +4,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.copyright__design a:hover {
+    color: hsl(288, 97%, 57%);
+}
