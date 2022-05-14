@@ -55,6 +55,5 @@
 .faq__item:active,
 .faq__item:focus {
     transition-duration: .2s;
-    transform: scale(1.1, 1.1);
-    transition-property: background-image, transform;
+    transition-property: background-image;
 }
