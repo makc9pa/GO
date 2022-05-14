@@ -14,8 +14,12 @@
 .header__book:hover,
 .header__book:focus {
     background-color: hsl(288, 97%, 27%);
+    transition-duration: .2s;
+    transition-property: background-color;
 }
 
 .header__book:active {
     background-color: hsl(275, 88%, 34%);
+    transition-duration: .2s;
+    transition-property: color;
 }

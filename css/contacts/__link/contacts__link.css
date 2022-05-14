@@ -13,14 +13,20 @@
 
 .contacts__link-first:hover {
     background-image: url(../../../img/social_instagram_hover.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-first:focus {
     background-image: url(../../../img/social_instagram_focus.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-first:active {
     background-image: url(../../../img/social_instagram_active.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-second {
@@ -29,14 +35,20 @@
 
 .contacts__link-second:hover {
     background-image: url(../../../img/social_vk-hover.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-second:focus {
     background-image: url(../../../img/social_vk-focus.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-second:active {
     background-image: url(../../../img/social_vk-active.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-third {
@@ -45,14 +57,20 @@
 
 .contacts__link-third:hover {
     background-image: url(../../../img/social_facebook-hover.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-third:focus {
     background-image: url(../../../img/social_facebook-focus.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-third:active {
     background-image: url(../../../img/social_facebook-active.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-forth {
@@ -61,12 +79,18 @@
 
 .contacts__link-forth:hover {
     background-image: url(../../../img/social_telegram-hover.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-forth:focus {
     background-image: url(../../../img/social_telegram-focus.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }
 
 .contacts__link-forth:active {
     background-image: url(../../../img/social_telegram-active.svg);
+    transition-duration: .2s;
+    transition-property: background-image;
 }

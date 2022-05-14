@@ -1,7 +1,11 @@
 .booking__set input:focus {
     outline: 1px solid #CD06FF;
+    transition-duration: .2s;
+    transition-property: outline;
 }
 
-.booking__set input + label:hover {
+.booking__set input+label:hover {
     color: #CD06FF;
+    transition-duration: .2s;
+    transition-property: color;
 }

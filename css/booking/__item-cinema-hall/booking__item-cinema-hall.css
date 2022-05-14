@@ -16,16 +16,21 @@
 .booking__item-cinema-hall:hover {
     background-color: #EADEED;
     border: 3px solid #640AA3;
+    transition-duration: .2s;
+    transition-property: background-color, border;
 }
 
 .booking__item-cinema-hall:focus {
     background-color: #FFFFFF;
     border: 3px solid #640AA3;
+    transition-duration: .2s;
+    transition-property: background-color, border;
 }
 
 .booking__item-cinema-hall:active {
     border: 3px solid #EADEED;
-    border: 3px solid #EADEED;
+    transition-duration: .2s;
+    transition-property: border;
 }
 
 .booking__item-cinema-hall-label {

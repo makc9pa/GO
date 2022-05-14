@@ -23,3 +23,9 @@
 .halls__item_forth {
     background: url('../../../img/Halls-Neon.jpg');
 }
+
+.halls__item:hover {
+    transition-duration: .2s;
+    transform: scale(1.1, 1.1);
+    transition-property: transform;
+}

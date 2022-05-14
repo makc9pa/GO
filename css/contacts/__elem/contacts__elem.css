@@ -26,4 +26,6 @@
 
 .contacts__elem:hover {
     color: hsl(288, 97%, 57%);
+    transition-duration: .2s;
+    transition-property: color;
 }

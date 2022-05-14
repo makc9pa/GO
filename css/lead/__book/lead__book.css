@@ -15,9 +15,13 @@
 .lead__book:focus {
     background-color: hsl(288, 88%, 34%);
     border-color: hsl(288, 88%, 34%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
 }
 
 .lead__book:active {
     background-color: hsl(275, 88%, 34%);
     border-color: hsl(275, 88%, 34%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
 }

@@ -14,14 +14,20 @@
 .booking__submit-btn:hover {
     background-color: hsl(288, 29%, 90%);
     border-color: hsl(288, 97%, 27%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
 }
 
 .booking__submit-btn:focus {
     background-color: #FFFFFF;
     border-color: hsl(288, 97%, 27%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
 }
 
 .booking__submit-btn:active {
     background-color: hsl(288, 29%, 90%);
     border-color: hsl(288, 29%, 90%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
 }
