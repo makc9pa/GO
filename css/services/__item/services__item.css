@@ -11,6 +11,7 @@
 }
 
 .services__item_audio {
+    margin-top: 70px;
     background-image: url(../../../img/Audio-system.jpg);
 }
 
@@ -19,6 +20,7 @@
 }
 
 .services__item_table-games {
+    margin-top: -70px;
     background-image: url(../../../img/Table-games.jpg);
 }
 
@@ -27,6 +29,7 @@
 }
 
 .services__item_playstation {
+    margin-top: -70px;
     background-image: url(../../../img/Playstation.jpg);
 }
 

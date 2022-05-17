@@ -3,7 +3,7 @@
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #6C0287;
+    color: var(--decor-color2);
     background: #FFFFFF;
     border-radius: 10px;
     padding: 16px 50px;
@@ -12,7 +12,7 @@
 }
 
 .booking__submit-btn:hover {
-    background-color: hsl(288, 29%, 90%);
+    background-color: var(--decor-background-color);
     border-color: hsl(288, 97%, 27%);
     transition-duration: .2s;
     transition-property: background-color, border-color;
@@ -20,14 +20,14 @@
 
 .booking__submit-btn:focus {
     background-color: #FFFFFF;
-    border-color: hsl(288, 97%, 27%);
+    border-color: var(--decor-color2);
     transition-duration: .2s;
     transition-property: background-color, border-color;
 }
 
 .booking__submit-btn:active {
-    background-color: hsl(288, 29%, 90%);
-    border-color: hsl(288, 29%, 90%);
+    background-color: var(--decor-background-color);
+    border-color: var(--decor-background-color);
     transition-duration: .2s;
     transition-property: background-color, border-color;
 }

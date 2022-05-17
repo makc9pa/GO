@@ -14,21 +14,21 @@
 }
 
 .booking__item-cinema-hall:hover {
-    background-color: #EADEED;
-    border: 3px solid #640AA3;
+    background-color: var(--decor-background-color);
+    border: 3px solid var(--decor-color-hover1);
     transition-duration: .2s;
     transition-property: background-color, border;
 }
 
 .booking__item-cinema-hall:focus {
     background-color: #FFFFFF;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--decor-color-hover1);
     transition-duration: .2s;
     transition-property: background-color, border;
 }
 
 .booking__item-cinema-hall:active {
-    border: 3px solid #EADEED;
+    border: 3px solid var(--decor-background-color);
     transition-duration: .2s;
     transition-property: border;
 }

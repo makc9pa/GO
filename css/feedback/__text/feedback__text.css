@@ -1,6 +1,5 @@
 .feedback__text {
-    /* width: 680px; */
     text-align: left;
     padding-top: 50px;
-    padding-left: 300px;
+    width: 680px;
 }

@@ -3,10 +3,20 @@
     line-height: 16px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.copyright__design {
+    text-align: right;
 }
 
 .copyright__design a:hover {
-    color: hsl(288, 97%, 57%);
+    color: var(--decor-color4);
     transition-duration: .2s;
     transition-property: color;
+}
+
+.copyright__design-author {
+    display: block;
+    margin-bottom: 6px;
 }

@@ -1,5 +1,5 @@
 .lead__p_count-cinema-halls {
-    color: #CD06FF;
+    color: var(--decor-color1);
     font-weight: 900;
     font-size: 100px;
     font-family: Arial Black;
@@ -8,7 +8,7 @@
 
 .lead__p_new {
     margin-bottom: 9px;
-    color: #CD06FF;
+    color: var(--decor-color1);
     font-weight: 900;
     font-size: 75px;
     font-family: Arial Black;

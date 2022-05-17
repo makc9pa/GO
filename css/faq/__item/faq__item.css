@@ -28,7 +28,7 @@
 }
 
 .faq__item:nth-child(even) {
-    background-color: #440F51;
+    background-color: var(--decor-color3);
     color: #FFF;
     background-image: url(../../../img/faq-open-white.svg);
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 }
 
 .faq__item:nth-child(even):hover {
-    background-color: #440F51;
+    background-color: var(--decor-color3);
     color: #FFF;
     background-image: url(../../../img/faq-open-white-hover.svg);
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 }
 
 .faq__item:nth-child(even):active {
-    background-color: #440F51;
+    background-color: var(--decor-color3);
     color: #FFF;
     background-image: url(../../../img/faq-open-white-active.svg);
     background-repeat: no-repeat;

@@ -1,6 +1,6 @@
 .booking {
     width: 100vw;
-    background-color: #440F51;
+    background-color: var(--decor-color3);
     padding-top: 80px;
     padding-bottom: 80px;
 }

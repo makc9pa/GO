@@ -4,24 +4,24 @@
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--font-color);
     padding: 25px 69px;
-    background: hsl(288, 97%, 27%);
+    background: var(--decor-color2);
     border-radius: 10px;
-    border-color: hsl(288, 97%, 27%);
+    border-color: var(--decor-color2);
 }
 
 .lead__book:hover,
 .lead__book:focus {
-    background-color: hsl(288, 88%, 34%);
-    border-color: hsl(288, 88%, 34%);
+    background-color: var(--decor-color6);
+    border-color: var(--decor-color6);
     transition-duration: .2s;
     transition-property: background-color, border-color;
 }
 
 .lead__book:active {
-    background-color: hsl(275, 88%, 34%);
-    border-color: hsl(275, 88%, 34%);
+    background-color: var(--decor-color5);
+    border-color: var(--decor-color6);
     transition-duration: .2s;
     transition-property: background-color, border-color;
 }

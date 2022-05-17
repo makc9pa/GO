@@ -1,0 +1,12 @@
+:root {
+    --font-color: white;
+    --main-background-color: hsl(300, 2%, 10%);
+    --decor-background-color: hsl(288, 29%, 90%);
+    --decor-color1: hsl(288, 100%, 51%);
+    --decor-color2: hsl(288, 97%, 27%);
+    --decor-color3: hsl(288, 69%, 19%);
+    --decor-color4: hsl(288, 97%, 57%);
+    --decor-color5: hsl(275, 88%, 34%);
+    --decor-color6: hsl(288, 88%, 34%);
+    --decor-color-hover1: hsl(275, 88%, 34%);
+}

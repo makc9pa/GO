@@ -7,5 +7,5 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--font-color);
 }
