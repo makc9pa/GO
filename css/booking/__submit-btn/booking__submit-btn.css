@@ -9,6 +9,7 @@
     padding: 16px 50px;
     position: relative;
     left: 763px;
+    filter: drop-shadow(0 0 20px var(--decor-background-color));
 }
 
 .booking__submit-btn:hover {

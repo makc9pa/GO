@@ -1,12 +1,10 @@
 .about__blockquote {
     margin: 0;
-    padding-left: 32px;
+    max-width: 468px;
     font-size: 44px;
     line-height: 50px;
     text-transform: uppercase;
-}
-
-.about__blockquote p {
-    margin-bottom: 59px;
     position: relative;
+    left: 33px;
+    margin-bottom: 39px;
 }

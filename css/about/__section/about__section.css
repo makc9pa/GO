@@ -1,3 +1,22 @@
 .about__section {
-    width: 1180px;
+    display: grid;
+    grid-template-areas:
+        "one two"
+        "one three";
+    column-gap: 80px;
+    row-gap: 59px;
+    grid-template-rows: 196px min-content;
+    grid-template-columns: min-content;
+}
+
+.about-grid-01 {
+    grid-area: one;
+}
+
+.about-grid-02 {
+    grid-area: two;
+}
+
+.about-grid-03 {
+    grid-area: three;
 }

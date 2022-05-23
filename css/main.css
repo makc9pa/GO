@@ -54,11 +54,14 @@
 @import url(booking/__title/booking__title.css);
 
 @import url(about/about.css);
-@import url(about/__text/about__text.css);
-@import url(about/__boss/about__boss.css);
 @import url(about/__blockquote/about__blockquote.css);
+@import url(about/__boss/about__boss.css);
+@import url(about/__boss-container/about__boss-container.css);
 @import url(about/__boss-desc/about__boss-desc.css);
+@import url(about/__boss-pic/about__boss-pic.css);
+@import url(about/__image/about__image.css);
 @import url(about/__section/about__section.css);
+@import url(about/__text/about__text.css);
 
 @import url(faq/faq.css);
 @import url(faq/__item/faq__item.css);

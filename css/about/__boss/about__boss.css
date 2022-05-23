@@ -1,8 +1,5 @@
 .about__boss {
-    position: relative;
-    left: 720px;
-    width: 500px;
-    background: url('../../../img/boss.png');
-    background-position: 110px;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
 }

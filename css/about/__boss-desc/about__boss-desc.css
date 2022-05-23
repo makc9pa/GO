@@ -1,4 +1,4 @@
 .about__boss-desc {
-    width: 279px;
-    margin-left: auto;
+    max-width: 279px;
+    /* margin-left: auto; */
 }

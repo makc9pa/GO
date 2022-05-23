@@ -1,0 +1,7 @@
+.about__image {
+    width: 600px;
+    height: 600px;
+    background-image: url('../../../img/aboutus-photos.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
