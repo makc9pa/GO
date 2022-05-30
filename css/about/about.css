@@ -2,3 +2,280 @@
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
+.about-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.about__section {
+    display: grid;
+    grid-template-areas:
+        "photo two"
+        "photo three";
+    gap: 59px 80px;
+}
+
+.about-grid-01 {
+    grid-area: photo;
+}
+
+.about-grid-02 {
+    grid-area: two;
+}
+
+.about-grid-03 {
+    grid-area: three;
+}
+
+.about__image {
+    width: 600px;
+    height: 596px;
+    background-image: url('../../../img/aboutus-photos.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about__boss {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__blockquote {
+    margin: 0;
+    max-width: 418px;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    left: 33px;
+    margin-bottom: 39px;
+}
+
+blockquote p:before {
+    content: "\201C";
+    position: absolute;
+    left: -35px;
+    top: 35px;
+    font-size: 88px;
+    line-height: 0;
+    color: var(--decor-color4);
+}
+
+blockquote p:after {
+    content: "\201D";
+    position: absolute;
+    right: 55px;
+    bottom: 10px;
+    font-size: 88px;
+    line-height: 0;
+    color: var(--decor-color4);
+}
+
+.about__boss-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80px;
+    column-gap: 30px;
+    justify-content: flex-end;
+}
+
+.about__boss-pic {
+    width: 80px;
+    max-height: 80px;
+    background-image: url('../../../img/boss.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about__boss-desc {
+    max-width: 279px;
+}
+
+@media (max-width: 1280px) {
+    .about {
+        padding-top: 70px;
+        padding-bottom: 35px;
+    }
+
+    .about-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .about__section {
+        gap: 37px 39.5px;
+    }
+
+    .about__image {
+        width: 420px;
+        height: 418px;
+    }
+
+    .about__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about__blockquote {
+        max-width: 380px;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 19px;
+    }
+
+    blockquote p:before {
+        top: 20px;
+        font-size: 66px;
+    }
+
+    blockquote p:after {
+        right: 125px;
+        bottom: 5px;
+        font-size: 66px;
+    }
+
+    .about__boss-container {
+        column-gap: 35px;
+    }
+
+    .about__boss-pic {
+        width: 70px;
+        max-height: 70px;
+    }
+
+    .about__boss-desc {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 225px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .about-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .about__section {
+        grid-template-areas:
+            "photo two"
+            "photo two"
+            "three three";
+        gap: 41px 28px;
+    }
+
+    .about-grid-02 {
+        align-self: center;
+    }
+
+    .about__image {
+        width: 382px;
+        height: 380px;
+    }
+
+    .about__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about__blockquote {
+        max-width: 666px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    blockquote p:before {
+        top: 20px;
+    }
+
+    blockquote p:after {
+        right: 120px;
+    }
+
+    .about__boss-container {
+        column-gap: 25px;
+    }
+
+    .about__boss-desc {
+        max-width: 225px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding-top: 30px;
+        padding-bottom: 17px;
+    }
+
+    .about-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about__section {
+        grid-template-areas:
+            "two"
+            "photo"
+            "three";
+        row-gap: 20px;
+    }
+
+    .about-grid-02 {
+        align-self: center;
+    }
+
+    .about__image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__blockquote {
+        max-width: 265px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 9px;
+        left: 15px;
+    }
+
+    blockquote p:before {
+        left: -15px;
+        top: 15px;
+        font-size: 44px;
+    }
+
+    blockquote p:after {
+        right: 115px;
+        bottom: 5px;
+        font-size: 44px;
+    }
+
+    .about__boss-container {
+        column-gap: 11px;
+        flex-basis: 56px;
+    }
+
+    .about__boss-pic {
+        width: 56px;
+        max-height: 56px;
+    }
+
+    .about__boss-desc {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 200px;
+    }
+}

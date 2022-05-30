@@ -1,8 +1,0 @@
-.feedback__item {
-    width: 980px;
-    flex-basis: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    justify-content: space-between;
-}

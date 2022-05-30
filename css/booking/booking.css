@@ -1,6 +1,659 @@
 .booking {
-    width: 100vw;
     background-color: var(--decor-color3);
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.booking-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.booking__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.booking__subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.booking__list-cinema-halls {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.booking__item-cinema-hall {
+    flex-basis: 250px;
+}
+
+.booking__item-cinema-hall input[type=radio] {
+    display: none;
+}
+
+.booking__item-cinema-hall label {
+    display: inline-block;
+    cursor: pointer;
+    background: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 7px 15px;
+    width: 100%;
+    border-radius: 8px;
+    user-select: none;
+}
+
+.booking__item-cinema-hall input[type=radio]:checked+label {
+    background-color: var(--decor-background-color);
+    border: 3px solid var(--decor-color-hover1);
+}
+
+.booking__item-cinema-hall label:hover {
+    background-color: var(--decor-background-color);
+    border: 3px solid var(--decor-color-hover1);
+    transition-duration: .2s;
+    transition-property: background-color, border;
+}
+
+.booking__item-cinema-hall label:focus {
+    background-color: #FFFFFF;
+    border: 3px solid var(--decor-color-hover1);
+    transition-duration: .2s;
+    transition-property: background-color, border;
+}
+
+.booking__item-cinema-hall label:active {
+    border: 3px solid var(--decor-background-color);
+    transition-duration: .2s;
+    transition-property: border;
+}
+
+.booking__set {
+    padding-left: 100px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 280px 300px 300px;
+    grid-template-areas:
+        "header-consoles header-games header-additionals"
+        "item1-console item1-game item1-additional"
+        "item2-console item2-game item2-additional"
+        "item3-console item3-game ."
+        "item4-console item4-game .";
+    column-gap: 100px;
+    row-gap: 20px;
+}
+
+.booking__item-subtitle_consoles,
+.booking__item-subtitle_games,
+.booking__item-subtitle_additionals {
+    margin-bottom: 4px;
+}
+
+.booking__item-console input[type=radio] {
+    display: none;
+}
+
+.booking__item-console input[type=radio]:checked+label:before {
+    color: var(--decor-color2);
+    background: url(/img/radio-2.svg) 0 0 no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.booking__item-console label {
+    font-size: 22px;
+    line-height: 25px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+.booking__item-console label:before {
+    content: '';
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    background: url(/img/radio-1.svg) 0 0 no-repeat;
+}
+
+.booking__item-table-game input[type=checkbox],
+.booking__item-additional input[type=checkbox] {
+    display: none;
+}
+
+.booking__item-table-game label,
+.booking__item-additional label {
+    font-size: 22px;
+    line-height: 25px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+.booking__item-table-game label::before,
+.booking__item-additional label::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    background: url(/img/checkbox-1.svg) 0 0 no-repeat;
+}
+
+.booking__item-table-game input[type=checkbox]:checked+label:before,
+.booking__item-additional input[type=checkbox]:checked+label:before {
+    color: var(--decor-color2);
+    background: url(/img/checkbox-2.svg) 0 0 no-repeat;
+    width: 33px;
+    height: 33px;
+}
+
+.booking__item-subtitle_consoles {
+    grid-area: header-consoles;
+}
+
+.booking__item-subtitle_games {
+    grid-area: header-games;
+}
+
+.booking__item-subtitle_additionals {
+    grid-area: header-additionals;
+}
+
+.booking__item1-console {
+    grid-area: item1-console;
+}
+
+.booking__item2-console {
+    grid-area: item2-console;
+}
+
+.booking__item3-console {
+    grid-area: item3-console;
+}
+
+.booking__item4-console {
+    grid-area: item4-console;
+}
+
+.booking__item1-game {
+    grid-area: item1-game;
+}
+
+.booking__item2-game {
+    grid-area: item2-game;
+}
+
+.booking__item3-game {
+    grid-area: item3-game;
+}
+
+.booking__item4-game {
+    grid-area: item4-game;
+}
+
+.item1-additional {
+    grid-area: item1-additional;
+}
+
+.item2-additional {
+    grid-area: item2-additional;
+}
+
+.booking__set input:focus {
+    outline: 1px solid var(--decor-color2);
+    transition-duration: .2s;
+    transition-property: outline;
+}
+
+.booking__set input+label:hover {
+    color: var(--decor-color2);
+    transition-duration: .2s;
+    transition-property: color;
+}
+
+.booking__item-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.booking__list-choose-date-time {
+    display: grid;
+    grid-template-columns: [first] 300px [second] 280px [third] 300px;
+    grid-template-areas:
+        "date-time name phone"
+        "count surname email"
+        ". . button";
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+    row-gap: 14px;
+    column-gap: 50px;
+    margin-bottom: 40px;
+}
+
+.booking__item:nth-child(1) {
+    grid-area: date-time;
+}
+
+.booking__item:nth-child(2) {
+    grid-area: name;
+}
+
+.booking__item:nth-child(3) {
+    grid-area: phone;
+}
+
+.booking__item:nth-child(4) {
+    grid-area: count;
+}
+
+.booking__item:nth-child(5) {
+    grid-area: surname;
+}
+
+.booking__item:nth-child(6) {
+    grid-area: email;
+}
+
+.booking__item:nth-child(7) {
+    grid-area: button;
+}
+
+.booking__item-choose-date-time-flex {
+    display: flex;
+    gap: 32px;
+}
+
+.booking__item-choose-date {
+    width: 134px;
+}
+
+.booking__item-choose-time {
+    width: 134px;
+}
+
+.booking__item-choose-name {
+    width: 280px;
+}
+
+.booking__item-choose-phone {
+    width: 300px;
+}
+
+.booking__item-choose-surname {
+    width: 280px;
+}
+
+.booking__item-choose-count {
+    width: 300px;
+}
+
+.booking__item-choose-email {
+    width: 300px;
+}
+
+.booking__item-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.booking__submit-btn {
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--decor-color4);
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px 50px;
+    border-color: #FFFFFF;
+    filter: drop-shadow(0 0 20px var(--decor-background-color));
+}
+
+.booking__submit-btn:hover {
+    background-color: var(--decor-background-color);
+    border-color: hsl(288, 97%, 27%);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
+}
+
+.booking__submit-btn:focus {
+    background-color: #FFFFFF;
+    border-color: var(--decor-color2);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
+}
+
+.booking__submit-btn:active {
+    background-color: var(--decor-background-color);
+    border-color: var(--decor-background-color);
+    transition-duration: .2s;
+    transition-property: background-color, border-color;
+}
+
+@media (max-width: 1280px) {
+    .booking {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .booking-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .booking__title {
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 26px;
+    }
+
+    .booking__item-cinema-hall {
+        flex-basis: 180px;
+    }
+
+    .booking__item-cinema-hall label {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .booking__list-set-group {
+        padding-left: 0;
+        justify-content: space-between;
+    }
+
+    .booking__set {
+        padding-left: 100px;
+        margin-bottom: 60px;
+        grid-template-columns: 235px 250px 250px;
+        column-gap: 85px;
+    }
+
+    .booking__set {
+        padding-left: 0;
+    }
+
+    .booking__list-choose-date-time {
+        grid-template-columns: [first] 300px [second] 250px [third] 250px;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-between;
+    }
+
+    .booking__item-choose-name {
+        width: 250px;
+    }
+
+    .booking__item-choose-phone {
+        width: 250px;
+    }
+
+    .booking__item-choose-surname {
+        width: 250px;
+    }
+
+    .booking__item-choose-email {
+        width: 250px;
+    }
+
+    .booking__submit-btn {
+        width: 250px;
+        margin-top: 36px;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: var(--decor-color4);
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 13px 46px;
+    }
+}
+
+@media (max-width: 900px) {
+    .booking {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .booking-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 30px;
+    }
+
+    .booking__list-cinema-halls {
+        flex-wrap: wrap;
+        gap: 29px;
+        margin-bottom: 50px;
+    }
+
+    .booking__item-cinema-hall {
+        flex-basis: 130px;
+    }
+
+    .booking__item-cinema-hall label {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 6px 20px;
+    }
+
+    .booking__set {
+        margin-bottom: 50px;
+        grid-template-columns: 300px 300px;
+        grid-template-areas:
+            "header-consoles header-games"
+            "item1-console item1-game"
+            "item2-console item2-game"
+            "item3-console item3-game"
+            "item4-console item4-game"
+            "header-additionals ."
+            "item1-additional ."
+            "item2-additional .";
+        column-gap: 66px;
+        row-gap: 35px;
+    }
+
+    .booking__list-choose-date-time {
+        grid-template-columns: [first] 280px [second] 300px;
+        grid-template-areas:
+            "date-time count"
+            "name phone"
+            "surname email"
+            ". button";
+        column-gap: 106px;
+        margin-bottom: 50px;
+    }
+
+    .booking__item-choose-date-time-flex {
+        gap: 14px;
+    }
+
+    .booking__item-choose-name {
+        width: 280px;
+    }
+
+    .booking__item-choose-phone {
+        width: 300px;
+    }
+
+    .booking__item-choose-surname {
+        width: 280px;
+    }
+
+    .booking__item-choose-email {
+        width: 300px;
+    }
+
+    .booking__submit-btn {
+        width: 250px;
+    }
+
+    .booking__submit-btn {
+        width: 300px;
+        font-size: 22px;
+        line-height: 28px;
+        padding: 16px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .booking-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .booking__title {
+        margin-bottom: 13px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .booking__subtitle {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .booking__list-cinema-halls {
+        gap: 20px 14px;
+        margin-bottom: 30px;
+    }
+
+    .booking__item-cinema-hall {
+        flex-basis: 130px;
+    }
+
+    .booking__item-cinema-hall label {
+        font-size: 13px;
+        line-height: 17px;
+        padding: 9px 20px;
+        border-radius: 4px;
+    }
+
+    .booking__list-set-group {
+        justify-content: space-between;
+    }
+
+    .booking__set {
+        margin-bottom: 30px;
+        grid-template-columns: 280px;
+        grid-template-areas:
+            "header-consoles"
+            "item1-console"
+            "item2-console"
+            "item3-console"
+            "item4-console"
+            "header-games"
+            "item1-game"
+            "item2-game"
+            "item3-game"
+            "item4-game"
+            "header-additionals"
+            "item1-additional"
+            "item2-additional";
+        row-gap: 27px;
+    }
+
+    .booking__item-subtitle_consoles,
+    .booking__item-subtitle_games,
+    .booking__item-subtitle_additionals {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .booking__item-console,
+    .booking__item-table-game,
+    .booking__item-additional {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .booking__list-choose-date-time {
+        grid-template-columns: [first] 280px;
+        grid-template-areas:
+            "date-time"
+            "count"
+            "name"
+            "surname"
+            "phone"
+            "email"
+            "button";
+        row-gap: 15px;
+        margin-bottom: 50px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .booking__item-choose-date-time-flex {
+        gap: 12px;
+    }
+
+    .booking__item-choose-count {
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .booking__item-choose-name {
+        width: 280px;
+    }
+
+    .booking__item-choose-phone {
+        width: 280px;
+    }
+
+    .booking__item-choose-surname {
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .booking__item-choose-email {
+        width: 280px;
+    }
+
+    .booking__submit-btn {
+        width: 280px;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 17px 58px;
+    }
 }

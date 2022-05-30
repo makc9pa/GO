@@ -2,3 +2,137 @@
     padding-top: 50px;
     padding-bottom: 100px;
 }
+
+.halls-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.halls__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.halls__item {
+    display: flex;
+    align-items: center;
+    max-width: 580px;
+    height: 349px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.halls__item_first {
+    background: url('../../../img/Halls-80sVibes.jpg');
+}
+
+.halls__item_second {
+    background: url('../../../img/Halls-StarWars.jpg');
+}
+
+.halls__item_third {
+    background: url('../../../img/Halls-WildWest.jpg');
+}
+
+.halls__item_forth {
+    background: url('../../../img/Halls-Neon.jpg');
+}
+
+.halls__item:hover {
+    transition-duration: .2s;
+    transform: scale(1.1, 1.1);
+    transition-property: transform;
+}
+
+.halls__text {
+    margin: 0 auto;
+    width: 252px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+@media (max-width: 1280px) {
+    .halls {
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
+
+    .halls-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .halls__item {
+        max-width: 443px;
+        height: 267px;
+        background-size: cover;
+    }
+
+    .halls__text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .halls {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .halls-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .halls__item {
+        max-width: 333px;
+        height: 200px;
+    }
+
+    .halls__text {
+        font-size: 40px;
+        line-height: 50px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .halls {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .halls-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .halls__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .halls__item {
+        height: 168px;
+    }
+
+    .halls__text {
+        font-size: 40px;
+        line-height: 50px;
+        width: 130px;
+    }
+}

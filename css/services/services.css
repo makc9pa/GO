@@ -2,3 +2,186 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.services-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.services__title {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
+.services__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 20px;
+}
+
+.services__item {
+    position: relative;
+    max-height: 228px;
+}
+
+.services__img {
+    width: 100%;
+}
+
+.services__item_vr {}
+
+.services__item_audio {
+    margin-top: 70px;
+}
+
+.services__item_karaoke {}
+
+.services__item_table-games {
+    margin-top: -70px;
+}
+
+.services__item_cinema {}
+
+.services__item_playstation {
+    margin-top: -70px;
+}
+
+.services__item:hover {
+    transition-duration: .2s;
+    transform: scale(1.1, 1.1);
+    transition-property: transform;
+}
+
+.services__text {
+    font-weight: 700;
+    position: absolute;
+    top: 74%;
+    left: 11%;
+}
+
+@media (max-width: 1280px) {
+    .services {
+        padding-top: 40px;
+        padding-bottom: 35px;
+    }
+
+    .services-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .services__title {
+        max-width: 600px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .services__item {
+        max-height: 172px;
+    }
+
+    .services__text {
+        top: 59%;
+        left: 6%;
+    }
+}
+
+@media (max-width: 900px) {
+    .services {
+        padding-bottom: 30px;
+    }
+
+    .services-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .services__title {
+        margin-bottom: 30px;
+        max-width: 500px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .services__list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .services__item {
+        max-width: 334px;
+        max-height: 200px;
+    }
+
+    .services__item_audio {
+        margin-top: 0;
+    }
+
+    .services__item_table-games {
+        margin-top: 0;
+    }
+
+    .services__item_playstation {
+        margin-top: 0;
+    }
+
+    .services__text {
+        top: 66%;
+        left: 8%;
+    }
+}
+
+@media (max-width: 670px) {
+    .services__text {
+        top: 40%;
+    }
+
+    .services__text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        padding-top: 23px;
+        padding-bottom: 15px;
+    }
+
+    .services-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services__title {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .services__list {
+        gap: 10px;
+    }
+
+    .services__item {
+        max-width: 135px;
+        max-height: 75px;
+    }
+
+    .services__text {
+        font-size: 10px;
+        line-height: 14px;
+        top: 40%;
+        left: 8%;
+    }
+}

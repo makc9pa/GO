@@ -1,6 +1,0 @@
-.faq__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    flex-basis: 1180px;
-}

@@ -1,9 +1,0 @@
-.header__item {
-    display: block;
-}
-
-.header__item:hover {
-    color: var(--decor-color4);
-    transition-duration: .2s;
-    transition-property: color;
-}

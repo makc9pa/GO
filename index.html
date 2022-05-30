@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/svg+xml" href="/img/icon.svg">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body class="page">
     <header class="header">
         <div class="header-container">
-            <img class="header__logo" src='img/logo.svg' alt="Логотип">
+            <button class="header__menu-btn" hidden></button>
+            <div class="header__logo-border">
+                <div class="header__logo-border_up"></div>
+                <div class="header__logo-border_right"></div>
+                <div class="header__logo-border_down"></div>
+                <div class="header__logo-border_left"></div>
+                <img class="header__logo" src='img/logo.svg' alt="Логотип">
+            </div>
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__item"><a href="#halls">Залы</a></li>
@@ -23,8 +31,8 @@
                     <li class="header__item"><a href="#feedback">Отзывы</a></li>
                     <li class="header__item"><a href="#contacts">Контакты</a></li>
                 </ul>
-                <button class="header__book">Заказать звонок</button>
             </nav>
+            <button class="header__book">Заказать звонок</button>
         </div>
     </header>
     <main>
@@ -43,42 +51,49 @@
                     </li>
                 </ul>
                 <button class="lead__book">
-                    Забронировать
+                    <nav>
+                        <a href="#booking">Забронировать</a>
+                    </nav>
                 </button>
+                <a class="lead__button-link" href="#services"></a>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="services-container">
                 <h2 class="services__title">
                     У нас есть все для классного отдыха с друзьями!
                 </h2>
                 <ul class="services__list">
                     <li class="services__item services__item_vr">
+                        <img class="services__img" src="/../../img/VR.jpg" alt="VR очки">
                         <p class="services__text">
                             VR очки
                         </p>
                     </li>
                     <li class="services__item services__item_audio">
+                        <img class="services__img" src="/../../img/Audio-system.jpg" alt="Аудио-система 5.1">
                         <p class="services__text">
-                            Аудио-система 5.1 с отличным звуком
+                            Аудио-система 5.1 <br> с отличным звуком
                         </p>
                     </li>
                     <li class="services__item services__item_karaoke">
+                        <img class="services__img" src="/../../img/Karaoke.jpg" alt="Караоке (4 микрофона)">
                         <p class="services__text">
                             Караоке (4 микрофона)
                         </p>
                     </li>
                     <li class="services__item services__item_table-games">
+                        <img class="services__img" src="/../../img/Table-games.jpg" alt="Настольные игры">
                         <p class="services__text">
                             Настольные игры
                         </p>
                     </li>
                     <li class="services__item services__item_cinema">
-                        <p class="services__text">
-                            Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
-                        </p>
+                        <img class="services__img" src="/../../img/Cinema-services.jpg" alt="Кино сервисы">
+                        <p class="services__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
                     </li>
                     <li class="services__item services__item_playstation">
+                        <img class="services__img" src="/../../img/Playstation.jpg" alt="РlаyStаtiоn 5">
                         <p class="services__text">
                             РlаyStаtiоn 5
                         </p>
@@ -86,7 +101,7 @@
                 </ul>
             </div>
         </section>
-        <section class="halls">
+        <section class="halls" id="halls">
             <div class="halls-container">
                 <h2 class="page__subtitle">Наши залы</h2>
                 <ul class="halls__list">
@@ -107,7 +122,7 @@
                 </ul>
             </div>
         </section>
-        <section class="booking">
+        <section class="booking" id="booking">
             <div class="booking-container">
                 <h1 class="booking__title">
                     Забронировать зал просто
@@ -116,146 +131,140 @@
                     <h2 class="booking__subtitle">
                         Выбери зал
                     </h2>
-                    <ul class="booking__list-cinema-halls">
-                        <li class="booking__item-cinema-hall">
-                            <input type="checkbox" id="hall1" name="hall1" value="80’s vibes" hidden>
-                            <label class="booking__item-cinema-hall-label" for="hall1">80’s vibes</label>
-                        </li>
-                        <li class="booking__item-cinema-hall">
-                            <input type="checkbox" id="hall2" name="hall2" value="Star wars" hidden>
-                            <label class="booking__item-cinema-hall-label" for="hall2">Star wars</label>
-                        </li>
-                        <li class="booking__item-cinema-hall">
-                            <input type="checkbox" id="hall3" name="hall3" value="Wild west" hidden>
-                            <label class="booking__item-cinema-hall-label" for="hall3">Wild west</label>
-                        </li>
-                        <li class="booking__item-cinema-hall">
-                            <input type="checkbox" id="hall4" name="hall4" value="Neon style" hidden>
-                            <label class="booking__item-cinema-hall-label" for="hall4">Neon style</label>
-                        </li>
-                    </ul>
+                    <div class="booking__list-cinema-halls">
+                        <div class="booking__item-cinema-hall">
+                            <input type="radio" id="hall1" name="hall" value="80’s vibes" checked>
+                            <label for="hall1">80’s vibes</label>
+                        </div>
+                        <div class="booking__item-cinema-hall">
+                            <input type="radio" id="hall2" name="hall" value="Star wars">
+                            <label for="hall2">Star wars</label>
+                        </div>
+                        <div class="booking__item-cinema-hall">
+                            <input type="radio" id="hall3" name="hall" value="Wild west">
+                            <label for="hall3">Wild west</label>
+                        </div>
+                        <div class="booking__item-cinema-hall">
+                            <input type="radio" id="hall4" name="hall" value="Neon style">
+                            <label for="hall4">Neon style</label>
+                        </div>
+                    </div>
                     <h2 class="booking__subtitle">
                         Собери набор развлечений
                     </h2>
                     <div class="booking__set">
-                        <ul class="booking__list-set-group">
-                            <li class="booking__item-subtitle">Приставка:</li>
-                            <li class="booking__item-subtitle">Настольные игры:</li>
-                            <li class="booking__item-subtitle">Дополнительно:</li>
-                        </ul>
-                        <div class="booking__sets">
-                            <ul class="booking__list-set-console">
-                                <li class="booking__item-console">
-                                    <input type="radio" id="radioButton1" value="playStation" checked="checked">
-                                    <label for="radioButton1">PlayStation 5</label>
-                                </li>
-                                <li class="booking__item-console">
-                                    <input type="radio" id="radioButton2" value="sega">
-                                    <label for="radioButton2">Sega Mega Drive</label>
-                                </li>
-                                <li class="booking__item-console">
-                                    <input type="radio" id="radioButton3" value="x-box">
-                                    <label for="radioButton3">X-box One S</label>
-                                </li>
-                                <li class="booking__item-console">
-                                    <input type="radio" id="radioButton4" value="dendy">
-                                    <label for="radioButton4">Dendy</label>
-                                </li>
-                            </ul>
-                            <ul class="booking__list-set-table-games">
-                                <li class="booking__item-table-game">
-                                    <input type="checkbox" id="jenga" name="jenga">
-                                    <label for="jenga">Jenga</label>
-                                </li>
-                                <li class="booking__item-table-game">
-                                    <input type="checkbox" id="monopoly" name="monopoly">
-                                    <label for="monopoly">Monopoly</label>
-                                </li>
-                                <li class="booking__item-table-game">
-                                    <input type="checkbox" id="manchkin" name="manchkin">
-                                    <label for="manchkin">Manchkin</label>
-                                </li>
-                                <li class="booking__item-table-game">
-                                    <input type="checkbox" id="alias" name="alias">
-                                    <label for="alias">Alias</label>
-                                </li>
-                            </ul>
-                            <ul class="booking__list-set-additional">
-                                <li class="booking__item-additional">
-                                    <input type="checkbox" id="karaoke" name="karaoke">
-                                    <label for="karaoke">Karaoke</label>
-                                </li>
-                                <li class="booking__item-additional">
-                                    <input type="checkbox" id="vr" name="vr">
-                                    <label for="vr">VR</label>
-                                </li>
-                            </ul>
+                        <div class="booking__item-subtitle booking__item-subtitle_consoles">Приставка:</div>
+                        <div class="booking__item-console booking__item1-console">
+                            <input type="radio" id="radioButton1" name="console" value="playStation" checked="checked">
+                            <label for="radioButton1">PlayStation 5</label>
                         </div>
-                        <h2 class="booking__subtitle">
-                            Выбери дату и время
-                        </h2>
-                        <ul class="booking__list-choose-date-time">
-                            <li class="booking__item-choose-date-time">
+                        <div class="booking__item-console booking__item2-console">
+                            <input type="radio" id="radioButton2" name="console" value="sega">
+                            <label for="radioButton2">Sega Mega Drive</label>
+                        </div>
+                        <div class="booking__item-console booking__item3-console">
+                            <input type="radio" id="radioButton3" name="console" value="x-box">
+                            <label for="radioButton3">X-box One S</label>
+                        </div>
+                        <div class="booking__item-console booking__item4-console">
+                            <input type="radio" id="radioButton4" name="console" value="dendy">
+                            <label for="radioButton4">Dendy</label>
+                        </div>
+                        <div class="booking__item-subtitle booking__item-subtitle_games">Настольные игры:</div>
+                        <div class="booking__item-table-game booking__item1-game">
+                            <input type="checkbox" id="jenga" name="jenga">
+                            <label for="jenga">Jenga</label>
+                        </div>
+                        <div class="booking__item-table-game booking__item2-game">
+                            <input type="checkbox" id="monopoly" name="monopoly">
+                            <label for="monopoly">Monopoly</label>
+                        </div>
+                        <div class="booking__item-table-game booking__item3-game">
+                            <input type="checkbox" id="manchkin" name="manchkin">
+                            <label for="manchkin">Manchkin</label>
+                        </div>
+                        <div class="booking__item-table-game booking__item4-game">
+                            <input type="checkbox" id="alias" name="alias">
+                            <label for="alias">Alias</label>
+                        </div>
+                        <div class="booking__item-subtitle booking__item-subtitle_additionals">Дополнительно:
+                        </div>
+                        <div class="booking__item-additional item1-additional">
+                            <input type="checkbox" id="karaoke" name="karaoke">
+                            <label for="karaoke">Karaoke</label>
+                        </div>
+                        <div class="booking__item-additional item2-additional">
+                            <input type="checkbox" id="vr" name="vr">
+                            <label for="vr">VR</label>
+                        </div>
+                    </div>
+                    <h2 class="booking__subtitle">
+                        Выбери дату и время
+                    </h2>
+                    <ul class="booking__list-choose-date-time">
+                        <div class="booking__item-choose-date-time-flex">
+                            <li class="booking__item booking__item-choose-date-time">
                                 <label for="date">
                                     <input class="booking__item-choose-date" type="text" onfocus="(type='date')"
                                         onblur="(type='text')" id="date" name="calendar" placeholder="Дата" required>
                                 </label>
                             </li>
-                            <li class="booking__item-choose-date-time">
+                            <li class="booking__item booking__item-choose-date-time">
                                 <label for="time">
                                     <input class="booking__item-choose-time" type="text" onfocus="(type='time')"
                                         onblur="(type='text')" id="time" name="time" placeholder="Время" required>
                                 </label>
                             </li>
-                            <li class="booking__item-choose-date-time">
-                                <p class="booking__item-label">Имя</p>
-                                <label for="name_book">
-                                    <input class="booking__item-choose-name" type="text" id="name_book" name="name_book"
-                                        required>
-                                </label>
-                            </li>
-                            <li class="booking__item-choose-date-time">
-                                <p class="booking__item-label">Телефон</p>
-                                <label for="phone_book">
-                                    <input class="booking__item-choose-phone" type="tel" id="phone_book"
-                                        name="phone_book" title="+7-___-___-__-__"
-                                        pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
-                                </label>
-                            </li>
-                            <li class="booking__item-choose-date-time">
-                                <label for="count">
-                                    <input class="booking__item-choose-count" list="count-list" id="count" name="count"
-                                        placeholder="Сколько человек?" required />
-                                    <datalist id="count-list">
-                                        <option value="1">
-                                        <option value="2">
-                                        <option value="3">
-                                        <option value="4">
-                                        <option value="5">
-                                    </datalist>
-                                </label>
-                            </li>
-                            <li class="booking__item-choose-date-time">
-                                <p class="booking__item-label">Фамилия</p>
-                                <label for="surname">
-                                    <input class="booking__item-choose-surname" type="text" id="surname"
-                                        name="surname_book" required>
-                                </label>
-                            </li>
-                            <li class="booking__item-choose-date-time">
-                                <p class="booking__item-label">E-mail</p>
-                                <label for="email">
-                                    <input class="booking__item-choose-email" type="email" id="email" name="email"
-                                        title="_@_._">
-                                </label>
-                            </li>
-                        </ul>
-                        <button class="booking__submit-btn" type="submit" formaction="#">Забронировать</button>
-                    </div>
+                        </div>
+                        <li class="booking__item booking__item-choose-date-time">
+                            <p class="booking__item-label">Имя</p>
+                            <label for="name_book">
+                                <input class="booking__item-choose-name" type="text" id="name_book" name="name_book"
+                                    required>
+                            </label>
+                        </li>
+                        <li class="booking__item booking__item-choose-date-time">
+                            <p class="booking__item-label">Телефон</p>
+                            <label for="phone_book">
+                                <input class="booking__item-choose-phone" type="tel" id="phone_book" name="phone_book"
+                                    title="+7-___-___-__-__"
+                                    pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required>
+                            </label>
+                        </li>
+                        <li class="booking__item booking__item-choose-date-time">
+                            <label for="count">
+                                <input class="booking__item-choose-count" list="count-list" id="count" name="count"
+                                    placeholder="Сколько человек?" required />
+                                <datalist id="count-list">
+                                    <option value="1">
+                                    <option value="2">
+                                    <option value="3">
+                                    <option value="4">
+                                    <option value="5">
+                                </datalist>
+                            </label>
+                        </li>
+                        <li class="booking__item booking__item-choose-date-time">
+                            <p class="booking__item-label">Фамилия</p>
+                            <label for="surname">
+                                <input class="booking__item-choose-surname" type="text" id="surname" name="surname_book"
+                                    required>
+                            </label>
+                        </li>
+                        <li class="booking__item booking__item-choose-date-time">
+                            <p class="booking__item-label">E-mail</p>
+                            <label for="email">
+                                <input class="booking__item-choose-email" type="email" id="email" name="email"
+                                    title="_@_._">
+                            </label>
+                        </li>
+                        <button class="booking__item booking__submit-btn" type="submit"
+                            onclick="submitForm(event)">Забронировать</button>
+                    </ul>
                 </form>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="aboutus">
             <div class="about-container">
                 <h2 class="page__subtitle">О нас</h2>
                 <div class="about__section">
@@ -270,7 +279,7 @@
                     </div>
                     <div class="about__boss about-grid-03">
                         <blockquote class="about__blockquote">
-                            <p>GAME OVER — <br>это место незабываемых впечатлений</p>
+                            <p>GAME OVER — это место незабываемых впечатлений</p>
                         </blockquote>
                         <div class="about__boss-container">
                             <p class="about__boss-pic"></p>
@@ -280,7 +289,7 @@
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="feedback-container">
                 <h2 class="page__subtitle">Отзывы посетителей</h2>
                 <ul class="feedback__list">
@@ -310,7 +319,7 @@
                 </ul>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="faq-container">
                 <h2 class="page__subtitle">Частые вопросы</h2>
                 <ul class="faq__list">
@@ -324,54 +333,43 @@
         </section>
     </main>
     <footer>
-        <section class="contacts">
+        <section class="footer" id="contacts">
             <div class="footer-container">
                 <h2 class="page__subtitle">Контакты</h2>
-                <div class="contacts__section">
-                    <div class="contacts__section-first">
-                        <ul class="contacts__list">
-                            <li class="contacts__elem">
-                                <p>г. Москва ул. Аквамарина, 16</p>
+                <div class="footer__section">
+                    <div class="footer__section-first">
+                        <ul class="footer__list">
+                            <li class="footer__elem">
+                                <p>г. Москва ул. Усачёва, 29 к3</p>
                             </li>
-                            <li class="contacts__elem">
-                                <p>
-                                    <a href="tel:89509302893">8 (950) 930 - 28 - 93
-                                    </a>
-                                </p>
+                            <li class="footer__elem">
+                                <p><a href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
                             </li>
-                            <li class="contacts__elem">
-                                <p>
-                                    <a href="mailto:GameOver@gmail.com">GameOver@gmail.com
-                                    </a>
-                                </p>
+                            <li class="footer__elem">
+                                <p><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
                             </li>
                         </ul>
-                        <ul class="contacts__socials">
-                            <li class="contacts__social-item">
-                                <a class="contacts__link contacts__link-first" href="https://www.instagram.com"
-                                    target="_blank">
-                                </a>
+                        <ul class="footer__socials">
+                            <li class="footer__social-item">
+                                <a class="footer__link footer__link-first" href="https://www.instagram.com"
+                                    target="_blank"></a>
                             </li>
-                            <li class="contacts__social-item">
-                                <a class="contacts__link contacts__link-second" href="https://vk.com/" target="_blank">
-                                </a>
+                            <li class="footer__social-item">
+                                <a class="footer__link footer__link-second" href="https://vk.com/" target="_blank"></a>
                             </li>
-                            <li class="contacts__social-item">
-                                <a class="contacts__link contacts__link-third" href="https://www.facebook.com/"
-                                    target="_blank">
-                                </a>
+                            <li class="footer__social-item">
+                                <a class="footer__link footer__link-third" href="https://www.facebook.com/"
+                                    target="_blank"></a>
                             </li>
-                            <li class="contacts__social-item">
-                                <a class="contacts__link contacts__link-forth" href="https://telegram.org/"
-                                    target="_blank">
-                                </a>
+                            <li class="footer__social-item">
+                                <a class="footer__link footer__link-forth" href="https://telegram.org/"
+                                    target="_blank"></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="contacts__section-map">
+                    <div class="footer__section-map">
                         <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A90187fd8b1a9cbae323ea8bb1d637ca826def11387f80ccc873b43bfa272db16&amp;source=constructor"
-                            width="680" height="274">
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A90187fd8b1a9cbae323ea8bb1d637ca826def11387f80ccc873b43bfa272db16&amp;source=constructor">
                         </iframe>
                     </div>
                 </div>

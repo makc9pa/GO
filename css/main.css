@@ -1,92 +1,33 @@
 @import url(var.css);
 
 @import url(page/page.css);
-@import url(page/__title/page__title.css);
-@import url(page/__subtitle/page__subtitle.css);
 
 @import url(header/header.css);
-@import url(header/__book/header__book.css);
-@import url(header/__item/header__item.css);
-@import url(header/__list/header__list.css);
-@import url(header/__logo/header__logo.css);
-@import url(header/__menu/header__menu.css);
-@import url(header/__text/header__text.css);
 
 @import url(lead/lead.css);
-@import url(lead/__slogan/lead__slogan.css);
-@import url(lead/__item/lead__item.css);
-@import url(lead/__list/lead__list.css);
-@import url(lead/__p/lead__p.css);
-@import url(lead/__book/lead__book.css);
 
 @import url(services/services.css);
-@import url(services/__title/services__title.css);
-@import url(services/__item/services__item.css);
-@import url(services/__list/services__list.css);
-@import url(services/__text/services__text.css);
 
 @import url(halls/halls.css);
-@import url(halls/__list/halls__list.css);
-@import url(halls/__item/halls__item.css);
-@import url(halls/__text/halls__text.css);
 
 @import url(booking/booking.css);
-@import url(booking/__item-additional/booking__item-additional.css);
-@import url(booking/__item-btn/booking__item-btn.css);
-@import url(booking/__item-choose-date-time/booking__item-choose-date-time.css);
-@import url(booking/__item-cinema-hall/booking__item-cinema-hall.css);
-@import url(booking/__item-console/booking__item-console.css);
-@import url(booking/__item-label/booking__item-label.css);
-@import url(booking/__item-subtitle/booking__item-subtitle.css);
-@import url(booking/__item-table-game/booking__item-table-game.css);
-@import url(booking/__list-choose-date-time/booking__list-choose-date-time.css);
-@import url(booking/__list-cinema-halls/booking__list-cinema-halls.css);
-@import url(booking/__list-set-additional/booking__list-set-additional.css);
-@import url(booking/__list-set-console/booking__list-set-console.css);
-@import url(booking/__list-set-group/booking__list-set-group.css);
-@import url(booking/__list-set-table-games/booking__list-set-table-games.css);
-@import url(booking/__set/booking__set.css);
-@import url(booking/__sets/booking__sets.css);
-@import url(booking/__submit-btn/booking__submit-btn.css);
-@import url(booking/__subtitle/booking__subtitle.css);
-@import url(booking/__subtitle-date/booking__sibtitle-date.css);
-@import url(booking/__subtitle-set/booking__sibtitle-set.css);
-@import url(booking/__title/booking__title.css);
 
 @import url(about/about.css);
-@import url(about/__blockquote/about__blockquote.css);
-@import url(about/__boss/about__boss.css);
-@import url(about/__boss-container/about__boss-container.css);
-@import url(about/__boss-desc/about__boss-desc.css);
-@import url(about/__boss-pic/about__boss-pic.css);
-@import url(about/__image/about__image.css);
-@import url(about/__section/about__section.css);
-@import url(about/__text/about__text.css);
-
-@import url(faq/faq.css);
-@import url(faq/__item/faq__item.css);
-@import url(faq/__list/faq__list.css);
-
-@import url(contacts/contacts.css);
-@import url(contacts/__list/contacts__list.css);
-@import url(contacts/__elem/contacts__elem.css);
-@import url(contacts/__section/contacts__section.css);
-@import url(contacts/__socials/contacts__socials.css);
-@import url(contacts/__social-item/contacts__social-item.css);
-@import url(contacts/__link/contacts__link.css);
 
 @import url(feedback/feedback.css);
-@import url(feedback/__item/feedback__item.css);
-@import url(feedback/__list/feedback__list.css);
-@import url(feedback/__pic/feedback__pic.css);
-@import url(feedback/__text/feedback__text.css);
-@import url(feedback/__title/feedback__title.css);
 
-@import url(copyright/copyright.css);
+@import url(faq/faq.css);
+
+@import url(footer/footer.css);
 
 html {
     position: relative;
     box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -98,9 +39,6 @@ html {
 body {
     min-height: 100vh;
     font-family: Arial, Arial Black, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
     color: var(--font-color);
     background-color: var(--main-background-color);
 }
@@ -137,94 +75,6 @@ fieldset {
 
 iframe {
     border: none;
-}
-
-.header-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.lead-container {
-    width: 1440px;
-    margin: 0 auto;
-    min-height: 822px;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.services-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.halls-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.booking-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.about-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.feedback-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.faq-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-.footer-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
-blockquote p:before {
-    content: "\201C";
-    position: absolute;
-    left: -35px;
-    top: 35px;
-    font-size: 88px;
-    line-height: 0;
-    color: var(--decor-color2);
-}
-
-blockquote p:after {
-    content: "\201D";
-    position: absolute;
-    right: 110px;
-    bottom: 10px;
-    font-size: 88px;
-    line-height: 0;
-    color: var(--decor-color2);
 }
 
 h3 {

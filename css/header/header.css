@@ -2,3 +2,229 @@
     padding-top: 30px;
     padding-bottom: 25px;
 }
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 130px;
+    padding-left: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header__logo-border {
+    flex-shrink: 0;
+    border: 1px solid var(--decor-color2);
+    padding: 16.5px 20px 3px;
+    position: relative;
+}
+
+.header__logo-border_up {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 58%;
+    height: 1px;
+    background-color: var(--main-background-color);
+}
+
+.header__logo-border_right {
+    position: absolute;
+    top: 30px;
+    left: 119px;
+    width: 1px;
+    height: 57%;
+    background-color: var(--main-background-color);
+}
+
+.header__logo-border_down {
+    position: absolute;
+    top: 64px;
+    left: 50px;
+    width: 60%;
+    height: 1px;
+    background-color: var(--main-background-color);
+}
+
+.header__logo-border_left {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 1px;
+    height: 53%;
+    background-color: var(--main-background-color);
+}
+
+.header__logo {
+    width: 79px;
+    height: 37px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 22px;
+    line-height: 50px;
+    color: var(--font-color);
+}
+
+.header__item {
+    display: block;
+    flex-shrink: 0;
+}
+
+.header__item:hover {
+    color: var(--decor-color4);
+    transition-duration: .2s;
+    transition-property: color;
+}
+
+.header__book {
+    flex-shrink: 0;
+    line-height: 30px;
+    padding: 9px 29px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    border: 3px solid var(--decor-color2);
+    border-radius: 10px;
+    color: var(--font-color);
+    background-color: var(--main-background-color);
+    text-transform: uppercase;
+}
+
+.header__book:hover,
+.header__book:focus {
+    background-color: var(--decor-color2);
+    transition-duration: .2s;
+    transition-property: background-color;
+}
+
+.header__book:active {
+    background-color: var(--decor-color5);
+    transition-duration: .2s;
+    transition-property: color;
+}
+
+@media (max-width: 1280px) {
+    .header-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .header__logo-border {
+        padding: 15px 12px 3px;
+    }
+
+    .header__logo-border_right {
+        position: absolute;
+        top: 25px;
+        left: 87px;
+        width: 1px;
+        height: 57%;
+        background-color: var(--main-background-color);
+    }
+
+    .header__logo-border_down {
+        position: absolute;
+        top: 55px;
+        left: 36px;
+        width: 60%;
+        height: 1px;
+        background-color: var(--main-background-color);
+    }
+
+    .header__logo {
+        width: 63px;
+        height: 30px;
+    }
+
+    .header__list {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .header__book {
+        padding: 7px 23px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .header__list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .header-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .header__menu-btn {
+        display: block;
+        background: url(../../img/menu-768.svg);
+        width: 54px;
+        height: 29px;
+        border: transparent;
+    }
+
+    .header__menu {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header__book {
+        display: none;
+    }
+
+    .header__menu-btn {
+        width: 39px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .header__logo {
+        width: 48px;
+        height: 23px;
+    }
+
+    .header__logo-border {
+        padding: 11px 10px 3px;
+    }
+
+    .header__logo-border_right {
+        position: absolute;
+        top: 20px;
+        left: 68px;
+        width: 1px;
+        height: 57%;
+        background-color: var(--main-background-color);
+    }
+
+    .header__logo-border_down {
+        position: absolute;
+        top: 44px;
+        left: 28px;
+        width: 60%;
+        height: 1px;
+        background-color: var(--main-background-color);
+    }
+}
