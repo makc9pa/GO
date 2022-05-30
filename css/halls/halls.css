@@ -30,19 +30,19 @@
 }
 
 .halls__item_first {
-    background: url('../../../img/Halls-80sVibes.jpg');
+    background: url('/../../img/Halls-80sVibes.jpg');
 }
 
 .halls__item_second {
-    background: url('../../../img/Halls-StarWars.jpg');
+    background: url('/../../img/Halls-StarWars.jpg');
 }
 
 .halls__item_third {
-    background: url('../../../img/Halls-WildWest.jpg');
+    background: url('/../../img/Halls-WildWest.jpg');
 }
 
 .halls__item_forth {
-    background: url('../../../img/Halls-Neon.jpg');
+    background: url('/../../img/Halls-Neon.jpg');
 }
 
 .halls__item:hover {
