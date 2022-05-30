@@ -39,16 +39,16 @@
 }
 
 .footer__elem:first-child {
-    background-image: url(../../../img/bx_bxs-location.svg);
+    background-image: url(.././img/bx_bxs-location.svg);
     margin-bottom: 28px;
 }
 
 .footer__elem:nth-child(2) {
-    background-image: url(../../../img/bx_bxs-phone-call.svg);
+    background-image: url(../../img/bx_bxs-phone-call.svg);
 }
 
 .footer__elem:last-child {
-    background-image: url(../../../img/bx_bxs-envelope.svg);
+    background-image: url(../../img/bx_bxs-envelope.svg);
 }
 
 .footer__elem:hover {
@@ -73,45 +73,45 @@
 }
 
 .footer__link-first {
-    background-image: url(../../../img/social_instagram_usual.svg);
+    background-image: url(../../img/social_instagram_usual.svg);
 }
 
 .footer__link-first:hover {
-    background-image: url(../../../img/social_instagram_hover.svg);
+    background-image: url(../../img/social_instagram_hover.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-first:focus {
-    background-image: url(../../../img/social_instagram_focus.svg);
+    background-image: url(../../img/social_instagram_focus.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-first:active {
-    background-image: url(../../../img/social_instagram_active.svg);
+    background-image: url(../../img/social_instagram_active.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-second {
-    background-image: url(../../../img/social_vk.svg);
+    background-image: url(../../img/social_vk.svg);
 }
 
 .footer__link-second:hover {
-    background-image: url(../../../img/social_vk-hover.svg);
+    background-image: url(../../img/social_vk-hover.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-second:focus {
-    background-image: url(../../../img/social_vk-focus.svg);
+    background-image: url(../../img/social_vk-focus.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-second:active {
-    background-image: url(../../../img/social_vk-active.svg);
+    background-image: url(../../img/social_vk-active.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
@@ -121,41 +121,41 @@
 }
 
 .footer__link-third:hover {
-    background-image: url(../../../img/social_facebook-hover.svg);
+    background-image: url(../../img/social_facebook-hover.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-third:focus {
-    background-image: url(../../../img/social_facebook-focus.svg);
+    background-image: url(../../img/social_facebook-focus.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-third:active {
-    background-image: url(../../../img/social_facebook-active.svg);
+    background-image: url(../../img/social_facebook-active.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-forth {
-    background-image: url(../../../img/social_telegram.svg);
+    background-image: url(../../img/social_telegram.svg);
 }
 
 .footer__link-forth:hover {
-    background-image: url(../../../img/social_telegram-hover.svg);
+    background-image: url(../../img/social_telegram-hover.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-forth:focus {
-    background-image: url(../../../img/social_telegram-focus.svg);
+    background-image: url(../../img/social_telegram-focus.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }
 
 .footer__link-forth:active {
-    background-image: url(../../../img/social_telegram-active.svg);
+    background-image: url(../../img/social_telegram-active.svg);
     transition-duration: .2s;
     transition-property: background-image;
 }

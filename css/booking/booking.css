@@ -109,7 +109,7 @@
 
 .booking__item-console input[type=radio]:checked+label:before {
     color: var(--decor-color2);
-    background: url(/img/radio-2.svg) 0 0 no-repeat;
+    background: url(../../img/radio-2.svg) 0 0 no-repeat;
     width: 33px;
     height: 33px;
 }
@@ -129,7 +129,7 @@
     height: 27px;
     position: absolute;
     left: 0;
-    background: url(/img/radio-1.svg) 0 0 no-repeat;
+    background: url(../../img/radio-1.svg) 0 0 no-repeat;
 }
 
 .booking__item-table-game input[type=checkbox],
@@ -154,13 +154,13 @@
     height: 25px;
     position: absolute;
     left: 0;
-    background: url(/img/checkbox-1.svg) 0 0 no-repeat;
+    background: url(../../img/checkbox-1.svg) 0 0 no-repeat;
 }
 
 .booking__item-table-game input[type=checkbox]:checked+label:before,
 .booking__item-additional input[type=checkbox]:checked+label:before {
     color: var(--decor-color2);
-    background: url(/img/checkbox-2.svg) 0 0 no-repeat;
+    background: url(../../img/checkbox-2.svg) 0 0 no-repeat;
     width: 33px;
     height: 33px;
 }
