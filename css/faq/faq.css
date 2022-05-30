@@ -28,29 +28,29 @@
 .faq__item:nth-child(odd) {
     background-color: #FFF;
     color: #1C1A1A;
-    background-image: url(../../../img/faq-open-purple.svg);
+    background-image: url(img/faq-open-purple.svg);
 }
 
 .faq__item:nth-child(even) {
     background-color: var(--decor-color3);
     color: #FFF;
-    background-image: url(../../../img/faq-open-white.svg);
+    background-image: url(img/faq-open-white.svg);
 }
 
 .faq__item:nth-child(odd):hover {
-    background-image: url(../../../img/faq-open-purple-hover.svg);
+    background-image: url(img/faq-open-purple-hover.svg);
 }
 
 .faq__item:nth-child(odd):active {
-    background-image: url(../../../img/faq-open-purple-active.svg);
+    background-image: url(img/faq-open-purple-active.svg);
 }
 
 .faq__item:nth-child(even):hover {
-    background-image: url(../../../img/faq-open-white-hover.svg);
+    background-image: url(img/faq-open-white-hover.svg);
 }
 
 .faq__item:nth-child(even):active {
-    background-image: url(../../../img/faq-open-white-active.svg);
+    background-image: url(img/faq-open-white-active.svg);
 }
 
 .faq__item:hover,
