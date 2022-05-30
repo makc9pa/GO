@@ -39,7 +39,7 @@
 }
 
 .footer__elem:first-child {
-    background-image: url(.././img/bx_bxs-location.svg);
+    background-image: url(../../img/bx_bxs-location.svg);
     margin-bottom: 28px;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .footer__link-third {
-    background-image: url(../../../img/social_facebook.svg);
+    background-image: url(../../img/social_facebook.svg);
 }
 
 .footer__link-third:hover {
