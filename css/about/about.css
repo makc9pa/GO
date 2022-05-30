@@ -33,7 +33,7 @@
 .about__image {
     width: 600px;
     height: 596px;
-    background-image: url('img/aboutus-photos.jpg');
+    background-image: url('img\aboutus-photos.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -85,7 +85,7 @@ blockquote p:after {
 .about__boss-pic {
     width: 80px;
     max-height: 80px;
-    background-image: url('img/boss.png');
+    background-image: url('img\boss.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
