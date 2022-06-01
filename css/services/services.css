@@ -3,13 +3,6 @@
     padding-bottom: 50px;
 }
 
-.services-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
 .services__title {
     max-width: 800px;
     margin: 0 auto 40px;
@@ -37,19 +30,13 @@
     width: 100%;
 }
 
-.services__item_vr {}
-
 .services__item_audio {
     margin-top: 70px;
 }
 
-.services__item_karaoke {}
-
 .services__item_table-games {
     margin-top: -70px;
 }
-
-.services__item_cinema {}
 
 .services__item_playstation {
     margin-top: -70px;
@@ -64,19 +51,14 @@
 .services__text {
     font-weight: 700;
     position: absolute;
-    top: 74%;
-    left: 11%;
+    top: 169px;
+    left: 42px;
 }
 
 @media (max-width: 1280px) {
     .services {
         padding-top: 40px;
         padding-bottom: 35px;
-    }
-
-    .services-container {
-        padding-left: 60px;
-        padding-right: 60px;
     }
 
     .services__title {
@@ -90,19 +72,14 @@
     }
 
     .services__text {
-        top: 59%;
-        left: 6%;
+        top: 102px;
+        left: 17px;
     }
 }
 
 @media (max-width: 900px) {
     .services {
         padding-bottom: 30px;
-    }
-
-    .services-container {
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
     .services__title {
@@ -136,14 +113,14 @@
     }
 
     .services__text {
-        top: 66%;
-        left: 8%;
+        top: 132px;
+        left: 27px;
     }
 }
 
 @media (max-width: 670px) {
     .services__text {
-        top: 40%;
+        top: 68px;
     }
 
     .services__text {
@@ -156,11 +133,6 @@
     .services {
         padding-top: 23px;
         padding-bottom: 15px;
-    }
-
-    .services-container {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .services__title {
@@ -181,7 +153,7 @@
     .services__text {
         font-size: 10px;
         line-height: 14px;
-        top: 40%;
-        left: 8%;
+        top: 32px;
+        left: 11px;
     }
 }

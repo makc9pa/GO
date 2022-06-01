@@ -13,52 +13,56 @@
 
 <body class="page">
     <header class="header">
-        <div class="header-container">
-            <button class="header__menu-btn" hidden></button>
-            <div class="header__logo-border">
-                <div class="header__logo-border_up"></div>
-                <div class="header__logo-border_right"></div>
-                <div class="header__logo-border_down"></div>
-                <div class="header__logo-border_left"></div>
-                <img class="header__logo" src='img/logo.svg' alt="Логотип">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="header__menu-btn" hidden></button>
+                <div class="header__logo-border">
+                    <div class="header__logo-border_up"></div>
+                    <div class="header__logo-border_right"></div>
+                    <div class="header__logo-border_down"></div>
+                    <div class="header__logo-border_left"></div>
+                    <img class="header__logo" src='img/logo.svg' alt="Логотип">
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="#halls">Залы</a></li>
+                        <li class="header__item"><a href="#aboutus">О нас</a></li>
+                        <li class="header__item"><a href="#booking">Бронь</a></li>
+                        <li class="header__item"><a href="#feedback">Отзывы</a></li>
+                        <li class="header__item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="header__book">Заказать звонок</button>
             </div>
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li class="header__item"><a href="#halls">Залы</a></li>
-                    <li class="header__item"><a href="#aboutus">О нас</a></li>
-                    <li class="header__item"><a href="#booking">Бронь</a></li>
-                    <li class="header__item"><a href="#feedback">Отзывы</a></li>
-                    <li class="header__item"><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-            <button class="header__book">Заказать звонок</button>
         </div>
     </header>
     <main>
         <section class="lead">
-            <div class="lead-container">
-                <h1 class="page__title title">Game Over</h1>
-                <p class="lead__slogan">Новый формат игр и отдыха</p>
-                <ul class="lead__list">
-                    <li class="lead__item">
-                        <p class="lead__p lead__p_count-cinema-halls">4</p>
-                        <p class="lead__p lead__p_cinema-halls">Тематических зала</p>
-                    </li>
-                    <li class="lead__item">
-                        <p class="lead__p lead__p_new">new</p>
-                        <p class="lead__p lead__p_new-devices">Новейшая аппаратура</p>
-                    </li>
-                </ul>
-                <button class="lead__book">
-                    <nav>
-                        <a href="#booking">Забронировать</a>
-                    </nav>
-                </button>
-                <a class="lead__button-link" href="#services"></a>
+            <div class="container">
+                <div class="lead__wrapper">
+                    <h1 class="page__title title">Game Over</h1>
+                    <p class="lead__slogan">Новый формат игр и отдыха</p>
+                    <ul class="lead__list">
+                        <li class="lead__item">
+                            <p class="lead__p lead__p_count-cinema-halls">4</p>
+                            <p class="lead__p lead__p_cinema-halls">Тематических зала</p>
+                        </li>
+                        <li class="lead__item">
+                            <p class="lead__p lead__p_new">new</p>
+                            <p class="lead__p lead__p_new-devices">Новейшая аппаратура</p>
+                        </li>
+                    </ul>
+                    <button class="lead__book">
+                        <nav>
+                            <a href="#booking">Забронировать</a>
+                        </nav>
+                    </button>
+                    <a class="lead__button-link" href="#services"></a>
+                </div>
             </div>
         </section>
         <section class="services" id="services">
-            <div class="services-container">
+            <div class="container">
                 <h2 class="services__title">
                     У нас есть все для классного отдыха с друзьями!
                 </h2>
@@ -101,7 +105,7 @@
             </div>
         </section>
         <section class="halls" id="halls">
-            <div class="halls-container">
+            <div class="container">
                 <h2 class="page__subtitle">Наши залы</h2>
                 <ul class="halls__list">
                     <li class="halls__item halls__item_first">
@@ -122,7 +126,7 @@
             </div>
         </section>
         <section class="booking" id="booking">
-            <div class="booking-container">
+            <div class="container">
                 <h1 class="booking__title">
                     Забронировать зал просто
                 </h1>
@@ -264,7 +268,7 @@
             </div>
         </section>
         <section class="about" id="aboutus">
-            <div class="about-container">
+            <div class="container">
                 <h2 class="page__subtitle">О нас</h2>
                 <div class="about__section">
                     <p class="about__image about-grid-01"></p>
@@ -289,37 +293,39 @@
             </div>
         </section>
         <section class="feedback" id="feedback">
-            <div class="feedback-container">
-                <h2 class="page__subtitle">Отзывы посетителей</h2>
-                <ul class="feedback__list">
-                    <li class="feedback__item feedback__item_first">
-                        <p class="feedback__pic feedback__pic_first"></p>
-                        <p class="feedback__text">Отмечали здесь день рождения с компанией друзей, все было очень круто!
-                            VR
-                            очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
-                            высоте!
-                        </p>
-                        <p class="feedback__title">Макс Самойлов</p>
-                    </li>
-                    <li class="feedback__item feedback__item_second">
-                        <p class="feedback__pic feedback__pic_second"></p>
-                        <p class="feedback__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
-                            получился корпоратив! У нас в городе больше нет подобных заведений
-                        </p>
-                        <p class="feedback__title">Оксана Григорьева</p>
-                    </li>
-                    <li class="feedback__item feedback__item_third">
-                        <p class="feedback__pic feedback__pic_third"></p>
-                        <p class="feedback__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
-                            комнаты в стиле звездных войн, попал в атмосферу космоса
-                        </p>
-                        <p class="feedback__title">Никита Ященко</p>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <h2 class="page__subtitle">Отзывы посетителей</h2>
+                    <ul class="feedback__list">
+                        <li class="feedback__item feedback__item_first">
+                            <p class="feedback__pic feedback__pic_first"></p>
+                            <p class="feedback__text">Отмечали здесь день рождения с компанией друзей, все было очень круто!
+                                VR
+                                очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
+                                высоте!
+                            </p>
+                            <p class="feedback__title">Макс Самойлов</p>
+                        </li>
+                        <li class="feedback__item feedback__item_second">
+                            <p class="feedback__pic feedback__pic_second"></p>
+                            <p class="feedback__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
+                                получился корпоратив! У нас в городе больше нет подобных заведений
+                            </p>
+                            <p class="feedback__title">Оксана Григорьева</p>
+                        </li>
+                        <li class="feedback__item feedback__item_third">
+                            <p class="feedback__pic feedback__pic_third"></p>
+                            <p class="feedback__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
+                                комнаты в стиле звездных войн, попал в атмосферу космоса
+                            </p>
+                            <p class="feedback__title">Никита Ященко</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="faq" id="faq">
-            <div class="faq-container">
+            <div class="container">
                 <h2 class="page__subtitle">Частые вопросы</h2>
                 <ul class="faq__list">
                     <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
@@ -333,7 +339,7 @@
     </main>
     <footer>
         <section class="footer" id="contacts">
-            <div class="footer-container">
+            <div class="container">
                 <h2 class="page__subtitle">Контакты</h2>
                 <div class="footer__section">
                     <div class="footer__section-first">

@@ -3,22 +3,18 @@
     padding-bottom: 50px;
 }
 
-.lead-container {
-    max-width: 1440px;
+.lead__wrapper {
     min-height: 823px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
     position: relative;
 }
 
-.lead-container::before {
+.lead__wrapper::before {
     content: '';
     display: block;
     position: absolute;
     background-image: url('../../img/background.png');
-    top: 7.5%;
-    left: 44%;
+    top: 61px;
+    left: 519px;
     background-repeat: no-repeat;
     width: 675px;
     height: 762px;
@@ -98,11 +94,10 @@
     background-repeat: no-repeat;
     width: 97px;
     height: 97px;
-    top: 68%;
-    right: 0;
+    top: 640px;
+    right: 590px;
     bottom: 0;
-    left: 0;
-    margin: auto;
+    left: 550px;
 }
 
 @media (max-width: 1280px) {
@@ -110,15 +105,13 @@
         padding-bottom: 40px;
     }
 
-    .lead-container {
+    .lead__wrapper {
         min-height: 570px;
-        padding-left: 60px;
-        padding-right: 60px;
     }
 
-    .lead-container::before {
-        top: 10.5%;
-        left: 49.5%;
+    .lead__wrapper::before {
+        top: 60px;
+        left: 447px;
         width: 453px;
         height: 520px;
         background-size: contain;
@@ -162,20 +155,19 @@
         background-size: contain;
         width: 67px;
         height: 67px;
-        top: 70%;
+        top: 450px;
+        left: 420px;
     }
 }
 
 @media (max-width: 900px) {
-    .lead-container {
+    .lead__wrapper {
         min-height: 505px;
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
-    .lead-container::before {
-        top: 8.5%;
-        left: 41.5%;
+    .lead__wrapper::before {
+        top: 43px;
+        left: 285px;
         width: 409px;
         height: 479px;
         background-size: contain;
@@ -224,23 +216,20 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
     .lead {
         padding-bottom: 23px;
     }
 
-    .lead-container {
+    .lead__wrapper {
         min-height: 197px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
-    .lead-container::before {
-        top: 8.5%;
-        left: 41.5%;
+    .lead__wrapper::before {
+        top: 20px;
+        left: 120px;
         width: 161px;
         height: 179px;
-        background-size: contain;
     }
 
     .lead__slogan {

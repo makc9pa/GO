@@ -3,13 +3,6 @@
     padding-bottom: 50px;
 }
 
-.about-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
 .about__section {
     display: grid;
     grid-template-areas:
@@ -100,11 +93,6 @@ blockquote p:after {
         padding-bottom: 35px;
     }
 
-    .about-container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
     .about__section {
         gap: 37px 39.5px;
     }
@@ -159,11 +147,6 @@ blockquote p:after {
         padding-bottom: 30px;
     }
 
-    .about-container {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .about__section {
         grid-template-areas:
             "photo two"
@@ -214,11 +197,6 @@ blockquote p:after {
     .about {
         padding-top: 30px;
         padding-bottom: 17px;
-    }
-
-    .about-container {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .about__section {

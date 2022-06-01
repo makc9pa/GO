@@ -4,13 +4,6 @@
     padding-bottom: 80px;
 }
 
-.booking-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-}
-
 .booking__title {
     margin-bottom: 40px;
     font-weight: 700;
@@ -359,11 +352,6 @@
         padding-bottom: 60px;
     }
 
-    .booking-container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
     .booking__title {
         margin-bottom: 25px;
         font-size: 30px;
@@ -439,11 +427,6 @@
     .booking {
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-
-    .booking-container {
-        padding-left: 40px;
-        padding-right: 40px;
     }
 
     .booking__title {
@@ -535,11 +518,6 @@
     .booking {
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .booking-container {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .booking__title {
