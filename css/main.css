@@ -20,6 +20,8 @@
 
 @import url(footer/footer.css);
 
+@import url(modal/modal.css);
+
 html {
     position: relative;
     box-sizing: border-box;

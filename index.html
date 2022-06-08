@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/script.js"></script>
+
 </head>
 
-<body class="page">
+<body cla ss="page">
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <button class="header__menu-btn" hidden></button>
+                <button class="header__menu-modal-close"></button>
+                <button class="header__menu-btn"></button>
                 <div class="header__logo-border">
                     <div class="header__logo-border_up"></div>
                     <div class="header__logo-border_right"></div>
@@ -221,8 +225,8 @@
                         </div>
                         <li class="booking__item booking__item-choose-date-time">
                             <p class="booking__item-label">Имя</p>
-                            <label for="name_book">
-                                <input class="booking__item-choose-name" type="text" id="name_book" name="name_book"
+                            <label for="name">
+                                <input class="booking__item-choose-name" type="text" id="name" name="name_book"
                                     required>
                             </label>
                         </li>
@@ -299,7 +303,8 @@
                     <ul class="feedback__list">
                         <li class="feedback__item feedback__item_first">
                             <p class="feedback__pic feedback__pic_first"></p>
-                            <p class="feedback__text">Отмечали здесь день рождения с компанией друзей, все было очень круто!
+                            <p class="feedback__text">Отмечали здесь день рождения с компанией друзей, все было очень
+                                круто!
                                 VR
                                 очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на
                                 высоте!
@@ -315,7 +320,8 @@
                         </li>
                         <li class="feedback__item feedback__item_third">
                             <p class="feedback__pic feedback__pic_third"></p>
-                            <p class="feedback__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
+                            <p class="feedback__text">Немного подвисала игра в VR очках, а так все норм. Крутое
+                                оформление
                                 комнаты в стиле звездных войн, попал в атмосферу космоса
                             </p>
                             <p class="feedback__title">Никита Ященко</p>
@@ -337,6 +343,7 @@
             </div>
         </section>
     </main>
+    </div>
     <footer>
         <section class="footer" id="contacts">
             <div class="container">
@@ -391,6 +398,41 @@
             </div>
         </section>
     </footer>
+    <div class="modal-overlay"></div>
+    <div class="modal-order">
+        <div class="modal-order__wrapper">
+            <div class="modal-order__close">
+                <img src="img/close.svg" alt="modal-close">
+            </div>
+            <h2 class="modal-order__title">Заказать звонок</h2>
+            <form class="modal-order__form">
+                <div class="modal-order__name">
+                    <p class="modal-order__p">Имя</p>
+                    <label class="modal-order__label" for="name">
+                        <input class="modal-order__input" type="text" id="name" name="name">
+                    </label>
+                </div>
+                <div class="modal-order__tel">
+                    <p class="modal-order__p">Телефон</p>
+                    <label class="modal-order__label" for="tel">
+                        <input class="modal-order__input" type="text" id="tel" name="tel">
+                    </label>
+                </div>
+                <button class="modal-order__submit" type="submit">Позвоните мне</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-menu">
+        <nav class="modal-menu__nav">
+            <ul class="modal-menu__list">
+                <li class="modal-menu__item"><a href="#halls">Залы</a></li>
+                <li class="modal-menu__item"><a href="#aboutus">О нас</a></li>
+                <li class="modal-menu__item"><a href="#booking">Бронь</a></li>
+                <li class="modal-menu__item"><a href="#feedback">Отзывы</a></li>
+                <li class="modal-menu__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 </html>
