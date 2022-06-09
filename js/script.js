@@ -6,6 +6,7 @@ const headerMenuBtn = $('.header__menu-btn');
 const modalMenu= $('.modal-menu');
 const modalMenuItem = $('.modal-menu__item');
 const headerMenuModalClose = $('.header__menu-modal-close');
+const faqList = document.querySelector('.faq__list');
 
 let windowSizeMiddle = window.matchMedia("(min-width: 901px)");
 let windowSizeSmall = window.matchMedia("(max-width: 480px)");
@@ -47,6 +48,35 @@ function addModalBtnToModalMenu(windowSizeSmall) {
     } else {
         $('.modal__book').detach();
     }
+}
+
+function initMap(){
+    const goMap = new ymaps.Map("footer__map", {
+        center: [55.597481, 37.347669],
+        zoom: 16
+    }, {
+        suppressMapOpenBlock: true
+    });
+
+    const goMark = new ymaps.Placemark([55.597481, 37.347669], {
+        balloonContentBody: [
+            '<address>',
+            '<strong>Наш адрес:</strong>',
+            '<br/>',
+            'Москва, ул. Усачёва, д.29, корп.3',
+            '</address>'
+        ].join(''),
+        iconCaption: 'GameOver',
+    }, {
+        preset: 'islands#dotIcon',
+        iconColor: '#735184'
+    });
+
+    goMap.geoObjects.add(goMark);
+
+    goMap.controls.remove('searchControl');
+    goMap.controls.remove('trafficControl');
+    goMap.controls.remove('typeSelector');
 }
 
 modalBtn.click(function() {
@@ -119,6 +149,33 @@ modalMenu.on('click', '.modal__book', function() {
 })
 
 removeMenuModalClose(windowSizeMiddle);
+// changeColorIcons();
 
 windowSizeMiddle.addListener(removeMenuModalClose);
 windowSizeMiddle.addListener(dontShowHeaderMenuBtn);
+
+ymaps.ready(initMap);
+
+for (let i = 0; i < faqList.children.length; i++) {
+    if (i === 0 || i % 2 === 0) {
+        $(faqList.children[i]).accordion({
+            active: true,
+            collapsible: true,
+            heightStyle: 'content',
+            icons: {
+                header: 'faq__icon_odd',
+                activeHeader: 'faq__icon_odd faq__icon_odd_active'
+            }
+        });
+    } else {
+        $(faqList.children[i]).accordion({
+            active: true,
+            collapsible: true,
+            heightStyle: 'content',
+            icons: {
+                header: 'faq__icon_even',
+                activeHeader: 'faq__icon_even faq__icon_even_active'
+            }
+        });
+    }
+}

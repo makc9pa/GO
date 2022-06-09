@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/svg+xml" href="img/icon.svg">
     <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/jquery-ui.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9d7739e6-8e0f-4c21-ac03-c47748797e9a&lang=ru_RU"
+        type="text/javascript"></script>
     <script defer src="js/script.js"></script>
 
 </head>
@@ -334,11 +337,47 @@
             <div class="container">
                 <h2 class="page__subtitle">Частые вопросы</h2>
                 <ul class="faq__list">
-                    <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-                    <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-                    <li class="faq__item">Какая комната самая популярная?</li>
-                    <li class="faq__item">Как получить VIP карту?</li>
-                    <li class="faq__item">Какая комната самая популярная?</li>
+                    <li class="faq__item">
+                        <h3 class="faq__button">
+                            <span class="faq__title">Можно ли забронировать комнату онлайн?</span>
+                        </h3>
+                        <p class="faq__text">
+                            Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете
+                            забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__button">
+                            <span class="faq__title">Могут ли мне вернуть деньги за бронь?</span>
+                        </h3>
+                        <p class="faq__text">
+                            Естественно =)
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__button">
+                            <span class="faq__title">Какая комната самая популярная?</span>
+                        </h3>
+                        <p class="faq__text">
+                            Дикий запад
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__button">
+                            <span class="faq__title">Как получить VIP карту?</span>
+                        </h3>
+                        <p class="faq__text">
+                            При оформлении бронирования на 10 человек и 5 часов выдается VIP-карта
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__button">
+                            <span class="faq__title">Какая комната самая популярная?</span>
+                        </h3>
+                        <p class="faq__text">
+                            Все популярные и классные!
+                        </p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -379,10 +418,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__section-map">
-                        <iframe
-                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A90187fd8b1a9cbae323ea8bb1d637ca826def11387f80ccc873b43bfa272db16&amp;source=constructor">
-                        </iframe>
+                    <div class="footer__section-map" id="map">
+                        <div id="footer__map"></div>
                     </div>
                 </div>
                 <div class="copyright">

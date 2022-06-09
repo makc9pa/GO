@@ -9,7 +9,7 @@
     margin-bottom: 130px;
 }
 
-.footer__section-map iframe {
+#footer__map {
     width: 680px;
     height: 274px;
 }
@@ -185,7 +185,7 @@
         margin-bottom: 90px;
     }
 
-    .footer__section-map iframe {
+    #footer__map {
         width: 542px;
     }
 
@@ -211,7 +211,7 @@
         margin-bottom: 75px;
     }
 
-    .footer__section-map iframe {
+    #footer__map {
         width: 688px;
         height: 337px;
     }
@@ -251,8 +251,8 @@
     .footer__section {
         margin-bottom: 63px;
     }
-
-    .footer__section-map iframe {
+    
+    #footer__map {
         width: 280px;
         height: 194px;
     }
