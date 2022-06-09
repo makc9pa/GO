@@ -6,7 +6,6 @@ const headerMenuBtn = $('.header__menu-btn');
 const modalMenu= $('.modal-menu');
 const modalMenuItem = $('.modal-menu__item');
 const headerMenuModalClose = $('.header__menu-modal-close');
-const faqList = document.querySelector('.faq__list');
 
 let windowSizeMiddle = window.matchMedia("(min-width: 901px)");
 let windowSizeSmall = window.matchMedia("(max-width: 480px)");
@@ -149,33 +148,18 @@ modalMenu.on('click', '.modal__book', function() {
 })
 
 removeMenuModalClose(windowSizeMiddle);
-// changeColorIcons();
 
 windowSizeMiddle.addListener(removeMenuModalClose);
 windowSizeMiddle.addListener(dontShowHeaderMenuBtn);
 
 ymaps.ready(initMap);
 
-for (let i = 0; i < faqList.children.length; i++) {
-    if (i === 0 || i % 2 === 0) {
-        $(faqList.children[i]).accordion({
-            active: true,
-            collapsible: true,
-            heightStyle: 'content',
-            icons: {
-                header: 'faq__icon_odd',
-                activeHeader: 'faq__icon_odd faq__icon_odd_active'
-            }
-        });
-    } else {
-        $(faqList.children[i]).accordion({
-            active: true,
-            collapsible: true,
-            heightStyle: 'content',
-            icons: {
-                header: 'faq__icon_even',
-                activeHeader: 'faq__icon_even faq__icon_even_active'
-            }
-        });
-    }
-}
+$('.faq__list').accordion({
+    active: true,
+        collapsible: true,
+        heightStyle: 'content',
+        icons: {
+            header: 'faq__icon_even faq__icon_odd',
+            activeHeader: 'faq__icon_even faq__icon_even_active faq__icon_odd faq__icon_odd_active'
+        }
+})

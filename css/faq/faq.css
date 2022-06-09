@@ -25,8 +25,10 @@
     display: block;
     width: 46px;
     height: 46px;
+    user-select: none;
 }
 
+.faq__item:nth-child(odd)
 .faq__icon_odd {
     background-image: url(../../img/faq-open-purple.svg);
 }
@@ -35,10 +37,12 @@
     background-image: url(../../img/faq-open-white.svg);
 }
 
+.faq__item:nth-child(odd)
 .faq__icon_odd:hover {
     background-image: url(../../img/faq-open-purple-hover.svg);
 }
 
+.faq__item:nth-child(odd)
 .faq__icon_odd:active {
     background-image: url(../../img/faq-open-purple-active.svg);
 }
@@ -51,6 +55,7 @@
     background-image: url(../../img/faq-open-white-active.svg);
 }
 
+.faq__item:nth-child(odd)
 .faq__icon_odd_active {
     background-image: url(../../img/faq-open-purple-active.svg);
 }
@@ -90,6 +95,33 @@
     justify-content: space-between;
     padding: 30px 70px;
 }
+
+/* .faq__button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-image: url(../../img/faq-open-white.svg);
+}
+
+.faq__item:nth-child(odd)
+.faq__button:after {
+    background-image: url(../../img/faq-open-purple.svg);
+} */
+
+/* .faq__button:nth-child(even):after {
+    background-image: url(../../img/faq-open-white.svg);
+} */
+
+/* .faq__button:nth-child(odd):after:hover {
+    background-image: url(../../img/faq-open-purple-hover.svg);
+}
+
+.faq__button:nth-child(even):after:active {
+    background-image: url(../../img/faq-open-purple-active.svg);
+} */
+
 
 @media (max-width: 1280px) {
     .faq {
