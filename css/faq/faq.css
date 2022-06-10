@@ -28,8 +28,7 @@
     user-select: none;
 }
 
-.faq__item:nth-child(odd)
-.faq__icon_odd {
+.faq__item:nth-child(odd) .faq__icon_odd {
     background-image: url(../../img/faq-open-purple.svg);
 }
 
@@ -37,13 +36,11 @@
     background-image: url(../../img/faq-open-white.svg);
 }
 
-.faq__item:nth-child(odd)
-.faq__icon_odd:hover {
+.faq__item:nth-child(odd) .faq__icon_odd:hover {
     background-image: url(../../img/faq-open-purple-hover.svg);
 }
 
-.faq__item:nth-child(odd)
-.faq__icon_odd:active {
+.faq__item:nth-child(odd) .faq__icon_odd:active {
     background-image: url(../../img/faq-open-purple-active.svg);
 }
 
@@ -55,8 +52,7 @@
     background-image: url(../../img/faq-open-white-active.svg);
 }
 
-.faq__item:nth-child(odd)
-.faq__icon_odd_active {
+.faq__item:nth-child(odd) .faq__icon_odd_active {
     background-image: url(../../img/faq-open-purple-active.svg);
 }
 
@@ -96,33 +92,6 @@
     padding: 30px 70px;
 }
 
-/* .faq__button:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 46px;
-    height: 46px;
-    background-image: url(../../img/faq-open-white.svg);
-}
-
-.faq__item:nth-child(odd)
-.faq__button:after {
-    background-image: url(../../img/faq-open-purple.svg);
-} */
-
-/* .faq__button:nth-child(even):after {
-    background-image: url(../../img/faq-open-white.svg);
-} */
-
-/* .faq__button:nth-child(odd):after:hover {
-    background-image: url(../../img/faq-open-purple-hover.svg);
-}
-
-.faq__button:nth-child(even):after:active {
-    background-image: url(../../img/faq-open-purple-active.svg);
-} */
-
-
 @media (max-width: 1280px) {
     .faq {
         padding-top: 35px;
@@ -133,10 +102,26 @@
         row-gap: 16px;
     }
 
-    /* .faq__item:nth-child(even) {
+    .faq__item:nth-child(even) {
         background-color: #FFF;
         color: #1C1A1A;
-    } */
+    }
+
+    .faq__icon_even {
+        background-image: url(../../img/faq-open-purple.svg);
+    }
+
+    .faq__icon_even:hover {
+        background-image: url(../../img/faq-open-purple-hover.svg);
+    }
+
+    .faq__icon_even:active {
+        background-image: url(../../img/faq-open-purple-active.svg);
+    }
+
+    .faq__icon_even_active {
+        background-image: url(../../img/faq-open-purple-active.svg);
+    }
 }
 
 @media (max-width: 900px) {
